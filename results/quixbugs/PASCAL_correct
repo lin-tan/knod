@@ -1,0 +1,8 @@
+--- java_programs/PASCAL.java.buggy	2022-07-29 12:20:32.106008995 -0400
++++ java_programs/PASCAL.java.fixed	2022-07-29 12:20:32.106008995 -0400
+@@ -21,3 +21,3 @@
+             ArrayList<Integer> row = new ArrayList<Integer>();
+-            for (int c=0; c<r; c++) {
++            for (int c = 0;c <= r;c++) {
+                 int upleft, upright;
+

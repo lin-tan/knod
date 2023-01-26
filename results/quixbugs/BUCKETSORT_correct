@@ -1,0 +1,8 @@
+--- java_programs/BUCKETSORT.java.buggy	2022-07-29 12:20:01.797525356 -0400
++++ java_programs/BUCKETSORT.java.fixed	2022-07-29 12:20:01.797525356 -0400
+@@ -23,3 +23,3 @@
+ 	int i = 0;
+-        for (Integer count : arr) {
++        for (Integer count : counts) {
+ 	    sorted_arr.addAll(Collections.nCopies(count, i));
+

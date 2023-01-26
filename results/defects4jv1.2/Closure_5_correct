@@ -1,0 +1,9 @@
+--- /src/com/google/javascript/jscomp/InlineObjectLiterals.java.buggy	2022-05-05 23:06:20.043493428 -0400
++++ /src/com/google/javascript/jscomp/InlineObjectLiterals.java.fixed	2022-05-05 23:06:20.043493428 -0400
+@@ -175,2 +175,5 @@
+           // a variable, so deleted properties should not be inlined.
++if (gramps.isDelProp() ){
++return false;
++}
+ 
+

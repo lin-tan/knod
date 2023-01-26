@@ -1,0 +1,8 @@
+--- /src/org/mockito/internal/util/reflection/GenericMetadataSupport.java.buggy	2022-05-05 23:10:11.110321222 -0400
++++ /src/org/mockito/internal/util/reflection/GenericMetadataSupport.java.fixed	2022-05-05 23:10:11.110321222 -0400
+@@ -78,3 +78,3 @@
+                 contextualActualTypeParameters.put(typeParameter, boundsOf((WildcardType) actualTypeArgument));
+-            } else {
++} else if (actualTypeArgument != typeParameter) {
+                 contextualActualTypeParameters.put(typeParameter, actualTypeArgument);
+

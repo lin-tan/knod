@@ -1,0 +1,7 @@
+--- src/java/org/apache/commons/lang3/time/FastDateFormat.java.buggy	2022-05-05 23:05:18.150735867 -0400
++++ src/java/org/apache/commons/lang3/time/FastDateFormat.java.fixed	2022-05-05 23:05:18.150735867 -0400
+@@ -871,2 +871,3 @@
+         if (mTimeZoneForced) {
++calendar.getTime().toString();
+             calendar = (Calendar) calendar.clone();
+

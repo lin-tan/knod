@@ -1,0 +1,8 @@
+--- /src/main/java/org/jsoup/parser/CharacterReader.java.buggy	2022-07-29 11:12:35.189312240 -0400
++++ /src/main/java/org/jsoup/parser/CharacterReader.java.fixed	2022-07-29 11:12:35.189312240 -0400
+@@ -90,3 +90,3 @@
+             int last = i + seq.length()-1;
+-            if (offset < length) {
++            if (offset < length - 2) {
+                 for (int j = 1; i < last && seq.charAt(j) == input[i]; i++, j++);
+

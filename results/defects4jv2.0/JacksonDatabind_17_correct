@@ -1,0 +1,10 @@
+--- /src/main/java/com/fasterxml/jackson/databind/ObjectMapper.java.buggy	2022-08-31 20:53:18.358677611 -0400
++++ /src/main/java/com/fasterxml/jackson/databind/ObjectMapper.java.fixed	2022-08-31 20:53:18.362677671 -0400
+@@ -177,5 +177,3 @@
+                 return (t.getRawClass() == Object.class)
+-                        || (!t.isConcrete()
+-                                // [databind#88] Should not apply to JSON tree models:
+-                        || TreeNode.class.isAssignableFrom(t.getRawClass()));
++                        || !t.isConcrete() && !TreeNode.class.isAssignableFrom(t.getRawClass());
+ 
+

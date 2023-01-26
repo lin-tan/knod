@@ -1,0 +1,9 @@
+--- /src/main/java/com/fasterxml/jackson/core/json/JsonWriteContext.java.buggy	2022-07-29 11:11:53.188663837 -0400
++++ /src/main/java/com/fasterxml/jackson/core/json/JsonWriteContext.java.fixed	2022-07-29 11:11:53.188663837 -0400
+@@ -168,2 +168,5 @@
+         if (_type == TYPE_OBJECT) {
++if (_currentName == null ){
++return STATUS_EXPECT_NAME;
++}
+             _gotName = false;
+

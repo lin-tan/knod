@@ -1,0 +1,8 @@
+--- /src/main/java/org/apache/commons/cli/TypeHandler.java.buggy	2022-07-29 11:10:53.039737652 -0400
++++ /src/main/java/org/apache/commons/cli/TypeHandler.java.fixed	2022-07-29 11:10:53.039737652 -0400
+@@ -102,3 +102,3 @@
+         {
+-            return null;
++            return (T)createURL(str);
+         }
+

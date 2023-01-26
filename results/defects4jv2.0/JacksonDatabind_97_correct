@@ -1,0 +1,8 @@
+--- /src/main/java/com/fasterxml/jackson/databind/node/POJONode.java.buggy	2022-07-29 11:12:23.769135807 -0400
++++ /src/main/java/com/fasterxml/jackson/databind/node/POJONode.java.fixed	2022-07-29 11:12:23.769135807 -0400
+@@ -113,3 +113,3 @@
+             //    this to preserve contextual information
+-            gen.writeObject(_value);
++            ctxt.defaultSerializeValue(_value,gen);
+         }
+

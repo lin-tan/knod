@@ -1,0 +1,7 @@
+--- /src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java.buggy	2022-07-29 11:11:56.284711588 -0400
++++ /src/main/java/com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.java.fixed	2022-07-29 11:11:56.284711588 -0400
+@@ -881,2 +881,3 @@
+             //    we rehash as needed, as need-rehash flag is not copied from parent
++_verifyNeedForRehash();
+         }
+

@@ -1,0 +1,8 @@
+--- /src/com/google/javascript/jscomp/NodeUtil.java.buggy	2022-05-05 23:07:14.208156352 -0400
++++ /src/com/google/javascript/jscomp/NodeUtil.java.fixed	2022-05-05 23:07:14.212156401 -0400
+@@ -2464,3 +2464,3 @@
+         // the constructor (similar to callHasLocalResult)
+-        return true;
++        return false;
+       case Token.FUNCTION:
+

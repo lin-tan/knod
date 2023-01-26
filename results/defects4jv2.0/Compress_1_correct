@@ -1,0 +1,7 @@
+--- /src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java.buggy	2022-07-29 11:11:21.268171951 -0400
++++ /src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java.fixed	2022-07-29 11:11:21.268171951 -0400
+@@ -345,2 +345,3 @@
+         if (!this.closed) {
++finish();
+             super.close();
+

@@ -1,0 +1,8 @@
+--- /src/com/google/javascript/jscomp/CodeGenerator.java.buggy	2022-05-05 23:07:10.540111461 -0400
++++ /src/com/google/javascript/jscomp/CodeGenerator.java.fixed	2022-05-05 23:07:10.540111461 -0400
+@@ -1044,3 +1044,3 @@
+             // check is measurably faster than using the CharsetEncoder.
+-            if (c > 0x1f && c <= 0x7f) {
++            if (c > 0x1f && c < 0x7f) {
+               sb.append(c);
+

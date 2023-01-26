@@ -1,0 +1,8 @@
+--- /src/com/google/javascript/jscomp/ProcessClosurePrimitives.java.buggy	2022-05-05 23:07:17.504196692 -0400
++++ /src/com/google/javascript/jscomp/ProcessClosurePrimitives.java.fixed	2022-05-05 23:07:17.508196741 -0400
+@@ -788,3 +788,3 @@
+           // modules. We need to move this code up to a common module.
+-          int indexOfDot = namespace.indexOf('.');
++          int indexOfDot = namespace.lastIndexOf('.');
+           if (indexOfDot == -1) {
+

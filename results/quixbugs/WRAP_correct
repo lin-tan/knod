@@ -1,0 +1,7 @@
+--- java_programs/WRAP.java.buggy	2022-07-29 12:20:45.258218830 -0400
++++ java_programs/WRAP.java.fixed	2022-07-29 12:20:45.258218830 -0400
+@@ -31,2 +31,3 @@
+ 
++        lines.add(text);
+         return lines;
+

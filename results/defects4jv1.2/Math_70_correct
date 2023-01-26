@@ -1,0 +1,8 @@
+--- /src/main/java/org/apache/commons/math/analysis/solvers/BisectionSolver.java.buggy	2022-05-05 23:09:39.481934189 -0400
++++ /src/main/java/org/apache/commons/math/analysis/solvers/BisectionSolver.java.fixed	2022-05-05 23:09:39.481934189 -0400
+@@ -71,3 +71,3 @@
+         throws MaxIterationsExceededException, FunctionEvaluationException {
+-        return solve(min, max);
++        return solve(f,min,max);
+     }
+

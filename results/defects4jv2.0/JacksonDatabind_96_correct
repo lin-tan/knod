@@ -1,0 +1,8 @@
+--- /src/main/java/com/fasterxml/jackson/databind/deser/BasicDeserializerFactory.java.buggy	2022-07-29 11:12:21.405099297 -0400
++++ /src/main/java/com/fasterxml/jackson/databind/deser/BasicDeserializerFactory.java.fixed	2022-07-29 11:12:21.409099359 -0400
+@@ -734,3 +734,3 @@
+ //            paramName = candidate.findImplicitParamName(0);
+-            paramName = candidate.findImplicitParamName(0);
++            paramName = candidate.paramName(0);
+             useProps = (paramName != null) && paramDef.couldSerialize();
+

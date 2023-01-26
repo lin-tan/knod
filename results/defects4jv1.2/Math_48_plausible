@@ -1,0 +1,8 @@
+--- /src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java.buggy	2022-05-05 23:09:11.317589536 -0400
++++ /src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java.fixed	2022-05-05 23:09:11.321589585 -0400
+@@ -188,3 +188,3 @@
+                     // for the maximum number of iterations to be exceeded.
+-                    break;
++                    throw new ConvergenceException(null);
+                 default:
+

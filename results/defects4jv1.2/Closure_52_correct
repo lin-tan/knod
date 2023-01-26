@@ -1,0 +1,9 @@
+--- /src/com/google/javascript/jscomp/CodeGenerator.java.buggy	2022-05-05 23:06:51.383877010 -0400
++++ /src/com/google/javascript/jscomp/CodeGenerator.java.fixed	2022-05-05 23:06:51.387877059 -0400
+@@ -744,2 +744,5 @@
+     }
++if (s.startsWith("0") ){
++return false;
++}
+     return len > 0;
+

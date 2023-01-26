@@ -1,0 +1,11 @@
+--- /src/main/java/org/apache/commons/math/util/MultidimensionalCounter.java.buggy	2022-05-05 23:09:19.625691205 -0400
++++ /src/main/java/org/apache/commons/math/util/MultidimensionalCounter.java.fixed	2022-05-05 23:09:19.629691254 -0400
+@@ -238,3 +238,3 @@
+         while (count < index) {
+-            count += idx;
++            count += 1;
+             ++idx;
+
+
+Equivalent:
+this patch results in the same value of "indices[last]" as the developer patch.

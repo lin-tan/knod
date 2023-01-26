@@ -1,0 +1,15 @@
+--- /src/java/org/apache/commons/cli/PosixParser.java.buggy	2022-07-29 11:10:42.875581442 -0400
++++ /src/java/org/apache/commons/cli/PosixParser.java.fixed	2022-07-29 11:10:42.875581442 -0400
+@@ -299,8 +299,7 @@
+             }
+-            else if (stopAtNonOption)
+-            {
++            else if (stopAtNonOption ){
+                 process(token.substring(i));
++break;
+             }
+-            else
+-            {
++else {
+                 tokens.add(token);
+

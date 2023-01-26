@@ -1,0 +1,7 @@
+--- /src/main/java/org/jsoup/helper/DataUtil.java.buggy	2022-07-29 11:12:36.961339625 -0400
++++ /src/main/java/org/jsoup/helper/DataUtil.java.fixed	2022-07-29 11:12:36.961339625 -0400
+@@ -118,2 +118,3 @@
+             charsetName = defaultCharset;
++doc = null;
+         }
+

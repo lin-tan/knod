@@ -1,0 +1,8 @@
+--- /src/main/java/com/fasterxml/jackson/databind/deser/BeanDeserializer.java.buggy	2022-07-29 11:12:06.260865504 -0400
++++ /src/main/java/com/fasterxml/jackson/databind/deser/BeanDeserializer.java.fixed	2022-07-29 11:12:06.260865504 -0400
+@@ -793,3 +793,3 @@
+                 //   since it is not the bean
+-                if (ext.handlePropertyValue(p, ctxt, propName, buffer)) {
++                if (ext.handlePropertyValue(p,ctxt,propName,_delegateDeserializer)) {
+                     ;
+

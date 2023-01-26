@@ -1,0 +1,8 @@
+--- /src/main/java/org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java.buggy	2022-05-05 23:09:23.829742651 -0400
++++ /src/main/java/org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java.fixed	2022-05-05 23:09:23.829742651 -0400
+@@ -174,3 +174,3 @@
+             // the nearest center that has already been chosen.
+-            int sum = 0;
++            double sum = 0;
+             for (int i = 0; i < pointSet.size(); i++) {
+

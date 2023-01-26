@@ -1,0 +1,9 @@
+--- source/org/jfree/chart/plot/XYPlot.java.buggy	2022-05-05 23:04:26.778107025 -0400
++++ source/org/jfree/chart/plot/XYPlot.java.fixed	2022-05-05 23:04:26.782107074 -0400
+@@ -4492,2 +4492,5 @@
+                 
++if (r == null ){
++continue  ;
++}
+                     Collection c = r.getAnnotations();
+

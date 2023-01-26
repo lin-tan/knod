@@ -1,0 +1,8 @@
+--- /src/main/java/com/fasterxml/jackson/databind/ser/std/NumberSerializer.java.buggy	2022-07-29 11:12:08.352897790 -0400
++++ /src/main/java/com/fasterxml/jackson/databind/ser/std/NumberSerializer.java.fixed	2022-07-29 11:12:08.352897790 -0400
+@@ -80,3 +80,3 @@
+             if (h == BigDecimal.class) {
+-                visitFloatFormat(visitor, typeHint, JsonParser.NumberType.BIG_INTEGER);
++                visitFloatFormat(visitor, typeHint, JsonParser.NumberType.BIG_DECIMAL);
+             } else {
+

@@ -1,0 +1,8 @@
+--- java_programs/MERGESORT.java.buggy	2022-07-29 12:20:24.029880134 -0400
++++ java_programs/MERGESORT.java.fixed	2022-07-29 12:20:24.029880134 -0400
+@@ -37,3 +37,3 @@
+     public static ArrayList<Integer> mergesort(ArrayList<Integer> arr) {
+-        if (arr.size() == 0) {
++        if (arr.size() == 1) {
+             return arr;
+

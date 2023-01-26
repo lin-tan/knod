@@ -1,0 +1,7 @@
+--- /src/java/org/apache/commons/lang/BooleanUtils.java.buggy	2022-05-05 23:08:13.320879794 -0400
++++ /src/java/org/apache/commons/lang/BooleanUtils.java.fixed	2022-05-05 23:08:13.320879794 -0400
+@@ -681,2 +681,3 @@
+                 }
++return false;
+             }
+

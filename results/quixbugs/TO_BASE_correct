@@ -1,0 +1,8 @@
+--- java_programs/TO_BASE.java.buggy	2022-07-29 12:20:43.214186220 -0400
++++ java_programs/TO_BASE.java.fixed	2022-07-29 12:20:43.214186220 -0400
+@@ -20,3 +20,3 @@
+             num = num / b; // floor division?
+-            result = result + String.valueOf(alphabet.charAt(i));
++            result = String.valueOf(alphabet.charAt(i)) + String.valueOf(result);
+         }
+

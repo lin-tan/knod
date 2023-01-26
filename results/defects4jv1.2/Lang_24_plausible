@@ -1,0 +1,8 @@
+--- src/main/java/org/apache/commons/lang3/math/NumberUtils.java.buggy	2022-05-05 23:05:12.850670992 -0400
++++ src/main/java/org/apache/commons/lang3/math/NumberUtils.java.fixed	2022-05-05 23:05:12.854671041 -0400
+@@ -1412,3 +1412,3 @@
+                 // not allowing L with an exponent or decimal point
+-                return foundDigit && !hasExp;
++                return hasDecPoint == hasExp;
+             }
+

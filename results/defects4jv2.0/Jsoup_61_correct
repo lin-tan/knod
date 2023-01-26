@@ -1,0 +1,8 @@
+--- /src/main/java/org/jsoup/nodes/Element.java.buggy	2022-07-29 11:12:48.101511833 -0400
++++ /src/main/java/org/jsoup/nodes/Element.java.fixed	2022-07-29 11:12:48.105511895 -0400
+@@ -1091,3 +1091,3 @@
+     public boolean hasClass(String className) {
+-        final String classAttr = attributes.get("class");
++        final String classAttr = attributes.getIgnoreCase("class");
+         final int len = classAttr.length();
+

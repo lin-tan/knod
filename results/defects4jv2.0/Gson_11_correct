@@ -1,0 +1,7 @@
+--- /gson/src/main/java/com/google/gson/internal/bind/TypeAdapters.java.buggy	2022-07-29 11:11:48.116585624 -0400
++++ /gson/src/main/java/com/google/gson/internal/bind/TypeAdapters.java.fixed	2022-07-29 11:11:48.116585624 -0400
+@@ -370,2 +370,3 @@
+       case NUMBER:
++case STRING: in.toString();
+         return new LazilyParsedNumber(in.nextString());
+

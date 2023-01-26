@@ -1,0 +1,9 @@
+--- /src/main/java/org/jsoup/helper/HttpConnection.java.buggy	2022-07-29 11:12:59.081681652 -0400
++++ /src/main/java/org/jsoup/helper/HttpConnection.java.fixed	2022-07-29 11:12:59.081681652 -0400
+@@ -423,2 +423,5 @@
+ 
++if (end > 0 ){
++return false;
++}
+ 
+

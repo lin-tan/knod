@@ -1,0 +1,9 @@
+--- /src/main/java/com/fasterxml/jackson/databind/type/SimpleType.java.buggy	2022-07-29 11:12:10.432929895 -0400
++++ /src/main/java/com/fasterxml/jackson/databind/type/SimpleType.java.fixed	2022-07-29 11:12:10.436929956 -0400
+@@ -134,4 +134,3 @@
+         // 15-Jan-2015, tatu: Not correct; should really re-resolve...
+-        return new SimpleType(subclass, _bindings, _superClass, _superInterfaces,
+-                _valueHandler, _typeHandler, _asStatic);
++        return new SimpleType(subclass,_bindings,withStaticTyping(),_superInterfaces,_valueHandler,_typeHandler,_asStatic);
+     }
+

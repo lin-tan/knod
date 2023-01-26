@@ -1,0 +1,9 @@
+--- /src/java/org/apache/commons/jxpath/ri/model/dom/DOMNodePointer.java.buggy	2022-07-29 11:13:00.333701022 -0400
++++ /src/java/org/apache/commons/jxpath/ri/model/dom/DOMNodePointer.java.fixed	2022-07-29 11:13:00.337701083 -0400
+@@ -107,2 +107,5 @@
+                 String nodeNS = DOMNodePointer.getNamespaceURI(node);
++if (wildcard == false ){
++return true;
++}
+                 return equalStrings(namespaceURI, nodeNS);
+

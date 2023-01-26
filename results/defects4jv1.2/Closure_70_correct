@@ -1,0 +1,9 @@
+--- /src/com/google/javascript/jscomp/TypedScopeCreator.java.buggy	2022-05-05 23:07:06.692064365 -0400
++++ /src/com/google/javascript/jscomp/TypedScopeCreator.java.fixed	2022-05-05 23:07:06.696064415 -0400
+@@ -1743,4 +1743,3 @@
+             if (jsDocParameter != null) {
+-              defineSlot(astParameter, functionNode,
+-                  jsDocParameter.getJSType(), true);
++              defineSlot(astParameter,functionNode,jsDocParameter.getJSType(),false);;
+               jsDocParameter = jsDocParameter.getNext();
+

@@ -1,0 +1,8 @@
+--- java_programs/BREADTH_FIRST_SEARCH.java.buggy	2022-07-29 12:19:59.781493181 -0400
++++ java_programs/BREADTH_FIRST_SEARCH.java.fixed	2022-07-29 12:19:59.781493181 -0400
+@@ -25,3 +25,3 @@
+ 
+-        while (true) {
++        while (!queue.isEmpty()) {
+             Node node = queue.removeFirst();
+

@@ -1,0 +1,8 @@
+--- java_programs/RPN_EVAL.java.buggy	2022-07-29 12:20:38.150105428 -0400
++++ java_programs/RPN_EVAL.java.fixed	2022-07-29 12:20:38.150105428 -0400
+@@ -33,3 +33,3 @@
+ 		BinaryOperator<Double> bin_op = op.get(token);
+-		c = bin_op.apply(a,b);
++		c = (Double)bin_op.apply(b,a);
+                 stack.push(c);
+

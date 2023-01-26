@@ -1,0 +1,9 @@
+--- /src/main/java/org/apache/commons/csv/CSVParser.java.buggy	2022-07-29 11:11:44.400528334 -0400
++++ /src/main/java/org/apache/commons/csv/CSVParser.java.fixed	2022-07-29 11:11:44.404528396 -0400
+@@ -383,2 +383,5 @@
+                     final boolean containsHeader = hdrMap.containsKey(header);
++if (header == null ){
++continue  ;
++}
+                     final boolean emptyHeader = header.trim().isEmpty();
+

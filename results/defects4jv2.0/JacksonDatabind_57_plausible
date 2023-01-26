@@ -1,0 +1,9 @@
+--- /src/main/java/com/fasterxml/jackson/databind/ObjectReader.java.buggy	2022-07-29 11:12:15.209003622 -0400
++++ /src/main/java/com/fasterxml/jackson/databind/ObjectReader.java.fixed	2022-07-29 11:12:15.209003622 -0400
+@@ -1440,4 +1440,3 @@
+         }
+-        return _bindAndReadValues(_considerFilter(_parserFactory.createParser(src), 
+-                true));
++        return _bindAndReadValues(_parserFactory.createParser(src,offset,length));
+     }
+

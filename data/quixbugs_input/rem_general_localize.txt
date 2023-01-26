@@ -1,0 +1,39 @@
+15,13-15,30	0	n = (n ^ (n - 1));
+26,16-26,19	0	true
+24,9-27,9	0	for (Integer count : arr) { sorted_arr.addAll(Collections.nCopies(count, i)); i++; }
+23,21-25,21	0	for (Node successornodes : node.getSuccessors()) { if (search(successornodes)) { return true; } }
+18,17-18,43	0	hare.getSuccessor() == null
+19,16-19,23	0	lo <= hi
+20,13-20,47	0	return binsearch(arr, x, mid, end);
+15,2-28,2	0	if (arr instanceof ArrayList) { ArrayList narr = (ArrayList) arr; ArrayList result = new ArrayList(50); for (Object x : narr) { if (x instanceof ArrayList) { result.addAll((ArrayList) flatten(x)); } else { result.add(flatten(x)); } } return result; } else { return flatten(arr); }
+19,13-19,33	0	return gcd(a % b, b);
+20,9-20,40	1	return new ArrayList<Integer>();
+29,13-29,64	0	steps.add(new Pair<Integer, Integer>(start, helper));
+17,2-17,13	0	return true;
+28,9-32,9	0	for (Integer x : arr) { heap.add(x); Integer popped = heap.poll(); output.add(popped); }
+30,26-30,35	0	weight < j
+26,13-26,33	0	return kth(above, k);
+35,21-44,21	0	if (dp.containsKey(i - 1)) { Map<Integer, Integer> internal_map = dp.get(i); int insert_value = dp.get(i - 1).get(j) + 1; internal_map.put(j, insert_value); dp.put(i, internal_map); } else { Map<Integer, Integer> internal_map = dp.get(i); internal_map.put(j, 1); dp.put(i, internal_map); }
+17,13-17,77	0	return 1 + levenshtein(source.substring(1), target.substring(1));
+31,17-31,37	0	longest = length + 1;
+18,13-18,79	0	return a.charAt(0) + longest_common_subsequence(a.substring(1), b);
+19,13-19,50	0	max_ending_here = max_ending_here + x;
+38,13-38,27	0	arr.size() == 0
+29,21-29,70	0	groupByNode = update(groupByNode, node, vertex_u);
+37,2-37,61	0	otherwise.addAll(Collections.nCopies(digit_list.length, 0));
+19,25-19,49	0	perm.get(j) < perm.get(i)
+22,13-35,13	0	for (int c = 0; c < r; c++) { int upleft, upright; if (c > 0) { upleft = rows.get(r - 1).get(c - 1); } else { upleft = 0; } if (c < r) { upright = rows.get(r - 1).get(c); } else { upright = 0; } row.add(upleft + upright); }
+17,13-17,21	0	total < 0
+26,24-26,32	0	x > pivot
+20,13-20,28	0	node = nextnode;
+34,3-34,24	0	c = bin_op.apply(a, b);
+39,25-39,104	0	unvisitedNodes.get(nextnode) + length_by_edge.get(Arrays.asList(node, nextnode))
+38,29-38,107	0	length_by_path.get(Arrays.asList(i, k)) + length_by_path.get(Arrays.asList(j, k))
+30,17-30,56	0	weight_by_edge.put(edge, update_weight);
+25,36-35,9	0	{ if (Integer.class.isInstance(token)) { rpntokens.add((Integer) token); } else { String operator = (String) token; while (!opstack.isEmpty() && precedence.get(operator) <= precedence.get(opstack.getLast())) { rpntokens.add(opstack.pop()); } } }
+41,17-41,41	0	any(list_comp(n, primes))
+16,16-16,43	0	Math.abs(x - approx) > epsilon
+16,13-16,35	0	return new ArrayList();
+21,13-21,65	0	result = result + String.valueOf(alphabet.charAt(i));
+17,21-17,106	0	orderedNodes.containsAll(nextNode.getSuccessors()) && !orderedNodes.contains(nextNode)
+32,9-32,21	0	return lines;

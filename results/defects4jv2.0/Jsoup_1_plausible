@@ -1,0 +1,8 @@
+--- /src/main/java/org/jsoup/nodes/Document.java.buggy	2022-07-29 11:12:32.069264028 -0400
++++ /src/main/java/org/jsoup/nodes/Document.java.fixed	2022-07-29 11:12:32.069264028 -0400
+@@ -125,3 +125,3 @@
+             body().appendChild(new TextNode(" ", ""));
+-            body().appendChild(node);
++prependChild(node);
+         }
+

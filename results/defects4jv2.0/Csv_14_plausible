@@ -1,0 +1,8 @@
+--- /src/main/java/org/apache/commons/csv/CSVFormat.java.buggy	2022-07-29 11:11:46.400559167 -0400
++++ /src/main/java/org/apache/commons/csv/CSVFormat.java.fixed	2022-07-29 11:11:46.400559167 -0400
+@@ -1038,3 +1038,3 @@
+                 // RFC4180 (https://tools.ietf.org/html/rfc4180) TEXTDATA =  %x20-21 / %x23-2B / %x2D-7E
+-                if (newRecord && (c < '0' || c > '9' && c < 'A' || c > 'Z' && c < 'a' || c > 'z')) {
++                if (newRecord && c == '0') {
+                     quote = true;
+

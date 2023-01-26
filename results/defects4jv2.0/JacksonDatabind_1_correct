@@ -1,0 +1,9 @@
+--- /src/main/java/com/fasterxml/jackson/databind/ser/BeanPropertyWriter.java.buggy	2022-07-29 11:12:01.772796251 -0400
++++ /src/main/java/com/fasterxml/jackson/databind/ser/BeanPropertyWriter.java.fixed	2022-07-29 11:12:01.772796251 -0400
+@@ -591,2 +591,5 @@
+             }
++if (value == null ){
++return;
++}
+         }
+

@@ -1,0 +1,7 @@
+--- /src/main/java/org/jsoup/nodes/Attributes.java.buggy	2022-07-29 11:12:46.497487032 -0400
++++ /src/main/java/org/jsoup/nodes/Attributes.java.fixed	2022-07-29 11:12:46.497487032 -0400
+@@ -125,2 +125,3 @@
+                 attributes.remove(attrKey);
++return;
+         }
+

@@ -1,0 +1,7 @@
+--- /src/java/org/apache/commons/codec/binary/Base64.java.buggy	2022-07-29 11:11:15.572084262 -0400
++++ /src/java/org/apache/commons/codec/binary/Base64.java.fixed	2022-07-29 11:11:15.576084324 -0400
+@@ -585,2 +585,3 @@
+         if (eof && modulus != 0) {
++resizeBuffer();
+             
+

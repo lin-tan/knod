@@ -1,0 +1,16 @@
+--- src/java/org/apache/commons/math/linear/BigMatrixImpl.java.buggy	2022-05-05 23:05:24.378812101 -0400
++++ src/java/org/apache/commons/math/linear/BigMatrixImpl.java.fixed	2022-05-05 23:05:24.382812150 -0400
+@@ -990,3 +990,3 @@
+         final int nCols = this.getColumnDimension();
+-        final BigDecimal[] out = new BigDecimal[v.length];
++        final BigDecimal[] out = new BigDecimal[data.length];
+         for (int row = 0; row < nRows; row++) {
+
+
+--- src/java/org/apache/commons/math/linear/RealMatrixImpl.java.buggy	2022-05-05 23:05:24.378812101 -0400
++++ src/java/org/apache/commons/math/linear/RealMatrixImpl.java.fixed	2022-05-05 23:05:24.382812150 -0400
+@@ -778,3 +778,3 @@
+         }
+-        final BigDecimal[] out = new BigDecimal[v.length];
++        final BigDecimal[] out = new BigDecimal[data.length];
+         for (int row = 0; row < nRows; row++) {

@@ -1,0 +1,8 @@
+--- /src/java/org/apache/commons/codec/binary/Base64InputStream.java.buggy	2022-08-31 20:53:12.098584073 -0400
++++ /src/java/org/apache/commons/codec/binary/Base64InputStream.java.fixed	2022-08-31 20:53:12.098584073 -0400
+@@ -169,3 +169,3 @@
+                     if (c > 0 && b.length == len) {
+-                        base64.setInitialBuffer(b, offset, len);
++base64.setInitialBuffer(buf,len,len);
+                     }
+

@@ -1,0 +1,9 @@
+--- /src/java/org/apache/commons/cli/Util.java.buggy	2022-07-29 11:10:37.351496581 -0400
++++ /src/java/org/apache/commons/cli/Util.java.fixed	2022-07-29 11:10:37.351496581 -0400
+@@ -35,2 +35,5 @@
+     {
++if (str == null ){
++return null;
++}
+         if (str.startsWith("--"))
+

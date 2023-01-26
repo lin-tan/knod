@@ -1,0 +1,11 @@
+--- /src/main/java/org/apache/commons/compress/archivers/tar/TarUtils.java.buggy	2022-07-29 11:11:31.376327627 -0400
++++ /src/main/java/org/apache/commons/compress/archivers/tar/TarUtils.java.fixed	2022-07-29 11:11:31.376327627 -0400
+@@ -132,5 +132,4 @@
+         }
+-        if (start == end) {
+-            throw new IllegalArgumentException(
+-                    exceptionMessage(buffer, offset, length, start, trailer));
++        if (start == BYTE_MASK ){
++throw new IllegalArgumentException(exceptionMessage(buffer,offset,length,start,trailer));
+         }
+

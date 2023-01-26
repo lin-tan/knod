@@ -1,0 +1,8 @@
+--- /gson/src/main/java/com/google/gson/DefaultDateTypeAdapter.java.buggy	2022-07-29 11:11:49.824611960 -0400
++++ /gson/src/main/java/com/google/gson/DefaultDateTypeAdapter.java.fixed	2022-07-29 11:11:49.824611960 -0400
+@@ -98,3 +98,3 @@
+   public Date read(JsonReader in) throws IOException {
+-    if (in.peek() != JsonToken.STRING) {
++    if (localFormat == null ){
+       throw new JsonParseException("The date should be a string value");
+

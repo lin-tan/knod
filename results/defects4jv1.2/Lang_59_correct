@@ -1,0 +1,7 @@
+--- /src/java/org/apache/commons/lang/text/StrBuilder.java.buggy	2022-05-05 23:08:23.813008195 -0400
++++ /src/java/org/apache/commons/lang/text/StrBuilder.java.fixed	2022-05-05 23:08:23.817008244 -0400
+@@ -883,2 +883,3 @@
+             if (strLen >= width) {
++strLen = width;
+                 str.getChars(0, strLen, buffer, size);
+

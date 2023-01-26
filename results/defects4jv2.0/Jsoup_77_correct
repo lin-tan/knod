@@ -1,0 +1,8 @@
+--- /src/main/java/org/jsoup/parser/XmlTreeBuilder.java.buggy	2022-07-29 11:12:53.469594846 -0400
++++ /src/main/java/org/jsoup/parser/XmlTreeBuilder.java.fixed	2022-07-29 11:12:53.469594846 -0400
+@@ -116,3 +116,3 @@
+     private void popStackToClose(Token.EndTag endTag) {
+-        String elName = endTag.name();
++        String elName = endTag.normalName();
+         Element firstFound = null;
+

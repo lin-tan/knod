@@ -1,0 +1,15 @@
+--- /src/java/org/apache/commons/cli/OptionGroup.java.buggy	2022-08-31 20:53:10.934566681 -0400
++++ /src/java/org/apache/commons/cli/OptionGroup.java.fixed	2022-08-31 20:53:10.934566681 -0400
+@@ -97,8 +97,6 @@
+         // selected member variable
+-        if (selected == null || selected.equals(option.getOpt()))
+-        {
+-            selected = option.getOpt();
++        if (selected == null ){
++selected = option.getKey();
+         }
+-        else
+-        {
++else {
+             throw new AlreadySelectedException(this, option);
+

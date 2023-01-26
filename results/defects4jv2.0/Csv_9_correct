@@ -1,0 +1,9 @@
+--- /src/main/java/org/apache/commons/csv/CSVRecord.java.buggy	2022-07-29 11:11:42.124493250 -0400
++++ /src/main/java/org/apache/commons/csv/CSVRecord.java.fixed	2022-07-29 11:11:42.128493311 -0400
+@@ -179,2 +179,5 @@
+     <M extends Map<String, String>> M putIn(final M map) {
++if (mapping == null ){
++return map;
++}
+         for (final Entry<String, Integer> entry : mapping.entrySet()) {
+

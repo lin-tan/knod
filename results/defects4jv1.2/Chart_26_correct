@@ -1,0 +1,9 @@
+--- source/org/jfree/chart/axis/Axis.java.buggy	2022-05-05 23:04:38.610251864 -0400
++++ source/org/jfree/chart/axis/Axis.java.fixed	2022-05-05 23:04:38.610251864 -0400
+@@ -1191,2 +1191,5 @@
+             ChartRenderingInfo owner = plotState.getOwner();
++if (owner == null ){
++return state;
++}
+                 EntityCollection entities = owner.getEntityCollection();
+

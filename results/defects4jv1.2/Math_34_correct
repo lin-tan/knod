@@ -1,0 +1,8 @@
+--- /src/main/java/org/apache/commons/math3/genetics/ListPopulation.java.buggy	2022-05-05 23:09:02.849485909 -0400
++++ /src/main/java/org/apache/commons/math3/genetics/ListPopulation.java.fixed	2022-05-05 23:09:02.849485909 -0400
+@@ -208,3 +208,3 @@
+     public Iterator<Chromosome> iterator() {
+-        return chromosomes.iterator();
++        return getChromosomes().iterator();
+     }
+

@@ -1,0 +1,12 @@
+--- /src/main/java/org/apache/commons/lang3/ClassUtils.java.buggy	2022-05-05 23:08:02.720750069 -0400
++++ /src/main/java/org/apache/commons/lang3/ClassUtils.java.fixed	2022-05-05 23:08:02.728750167 -0400
+@@ -909,4 +909,8 @@
+         for (int i = 0; i < array.length; i++) {
++            try{
+             classes[i] = array[i].getClass();
+         }
++catch ( Exception e) {
++}
++        }
+         return classes;
+

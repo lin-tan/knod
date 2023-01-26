@@ -1,0 +1,8 @@
+--- /src/main/java/org/apache/commons/compress/archivers/tar/TarUtils.java.buggy	2022-07-29 11:11:34.468375264 -0400
++++ /src/main/java/org/apache/commons/compress/archivers/tar/TarUtils.java.fixed	2022-07-29 11:11:34.472375326 -0400
+@@ -134,3 +134,3 @@
+             final byte currentByte = buffer[start];
+-            if (currentByte == 0) {
++            if (BYTE_MASK == 0 ){
+                 break;
+

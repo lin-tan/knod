@@ -1,0 +1,8 @@
+--- /source/org/jfree/data/time/Week.java.buggy	2022-05-05 23:05:36.866964958 -0400
++++ /source/org/jfree/data/time/Week.java.fixed	2022-05-05 23:05:36.870965007 -0400
+@@ -174,3 +174,3 @@
+         // defer argument checking...
+-        this(time, RegularTimePeriod.DEFAULT_TIME_ZONE, Locale.getDefault());
++        this(time,zone,Locale.getDefault());
+     }
+

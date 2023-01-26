@@ -1,0 +1,8 @@
+--- /src/java/org/apache/commons/lang/text/StrBuilder.java.buggy	2022-05-05 23:08:29.137073350 -0400
++++ /src/java/org/apache/commons/lang/text/StrBuilder.java.fixed	2022-05-05 23:08:29.141073399 -0400
+@@ -1775,3 +1775,3 @@
+         char[] thisBuf = buffer;
+-        int len = thisBuf.length - strLen;
++        int len = size + 1 - strLen;
+         outer:
+

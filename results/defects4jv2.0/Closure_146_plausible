@@ -1,0 +1,8 @@
+--- /src/com/google/javascript/rhino/jstype/JSType.java.buggy	2022-07-29 11:10:57.179801305 -0400
++++ /src/com/google/javascript/rhino/jstype/JSType.java.fixed	2022-07-29 11:10:57.183801368 -0400
+@@ -705,3 +705,3 @@
+       case TRUE:
+-        return new TypePair(null, null);
++        return new TypePair(that.restrictByNotNullOrUndefined(),that.restrictByNotNullOrUndefined());
+ 
+

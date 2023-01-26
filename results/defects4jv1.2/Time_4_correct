@@ -1,0 +1,8 @@
+--- /src/main/java/org/joda/time/Partial.java.buggy	2022-05-05 23:10:28.210530473 -0400
++++ /src/main/java/org/joda/time/Partial.java.fixed	2022-05-05 23:10:28.210530473 -0400
+@@ -463,3 +463,3 @@
+             // this isn't overly efficient, but is safe
+-            Partial newPartial = new Partial(iChronology, newTypes, newValues);
++            Partial newPartial = new Partial(newTypes,newValues,iChronology);
+             iChronology.validate(newPartial, newValues);
+

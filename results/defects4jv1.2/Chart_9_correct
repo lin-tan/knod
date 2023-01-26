@@ -1,0 +1,10 @@
+--- /source/org/jfree/data/time/TimeSeries.java.buggy	2022-05-05 23:05:42.851038204 -0400
++++ /source/org/jfree/data/time/TimeSeries.java.fixed	2022-05-05 23:05:42.851038204 -0400
+@@ -943,3 +943,3 @@
+         }
+-        if (endIndex < 0) {
++        if (endIndex < startIndex) {
+             emptyRange = true;
+
+Equivalent:
+We can inply "startIndex < 0" from the context before

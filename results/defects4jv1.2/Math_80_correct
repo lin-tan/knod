@@ -1,0 +1,8 @@
+--- /src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java.buggy	2022-05-05 23:09:46.562020828 -0400
++++ /src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java.fixed	2022-05-05 23:09:46.562020828 -0400
+@@ -1134,3 +1134,3 @@
+             // flip array
+-            int j = 4 * n - 1;
++            int j = 4 * n - 4;
+             for (int i = 0; i < j; i += 4) {
+

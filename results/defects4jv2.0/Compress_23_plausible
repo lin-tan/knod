@@ -1,0 +1,8 @@
+--- /src/main/java/org/apache/commons/compress/archivers/sevenz/Coders.java.buggy	2022-07-29 11:11:27.940274699 -0400
++++ /src/main/java/org/apache/commons/compress/archivers/sevenz/Coders.java.fixed	2022-07-29 11:11:27.940274699 -0400
+@@ -111,3 +111,3 @@
+             for (int i = 1; i < 4; i++) {
+-                dictSize |= (coder.properties[i + 1] << (8 * i));
++                dictSize |= i << 1 << 8 * i;
+             }
+

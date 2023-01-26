@@ -1,0 +1,11 @@
+--- /src/com/google/javascript/jscomp/CodeConsumer.java.buggy	2022-05-05 23:06:47.391828151 -0400
++++ /src/com/google/javascript/jscomp/CodeConsumer.java.fixed	2022-05-05 23:06:47.391828151 -0400
+@@ -244,3 +244,3 @@
+     boolean negativeZero = isNegativeZero(x);
+-    if (x < 0 && prev == '-') {
++    if (x <= 0 && prev == '-') {
+       add(" ");
+
+
+Equivalent:
+this bug is triggered when x is negativeZero, which is equivalent to '-0'. so this patch includes the triggering case. 

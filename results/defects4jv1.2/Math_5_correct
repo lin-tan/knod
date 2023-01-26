@@ -1,0 +1,8 @@
+--- /src/main/java/org/apache/commons/math3/complex/Complex.java.buggy	2022-05-05 23:08:37.593176833 -0400
++++ /src/main/java/org/apache/commons/math3/complex/Complex.java.fixed	2022-05-05 23:08:37.597176882 -0400
+@@ -304,3 +304,3 @@
+         if (real == 0.0 && imaginary == 0.0) {
+-            return NaN;
++            return INF;
+         }
+

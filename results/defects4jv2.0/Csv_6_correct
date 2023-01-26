@@ -1,0 +1,12 @@
+--- /src/main/java/org/apache/commons/csv/CSVRecord.java.buggy	2022-08-31 20:51:16.336854690 -0400
++++ /src/main/java/org/apache/commons/csv/CSVRecord.java.fixed	2022-08-31 20:51:16.336854690 -0400
+@@ -181,4 +181,8 @@
+             final int col = entry.getValue().intValue();
++                try{
+                 map.put(entry.getKey(), values[col]);
+         }
++catch ( Exception e) {
++}
++        }
+         return map;
+

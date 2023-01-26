@@ -1,0 +1,8 @@
+--- /src/main/java/com/fasterxml/jackson/dataformat/xml/ser/XmlSerializerProvider.java.buggy	2022-07-29 11:12:29.497224290 -0400
++++ /src/main/java/com/fasterxml/jackson/dataformat/xml/ser/XmlSerializerProvider.java.fixed	2022-07-29 11:12:29.497224290 -0400
+@@ -58,3 +58,3 @@
+         //    root name lookup as that may link back to diff version, configuration
+-        _rootNameLookup = src._rootNameLookup;
++        _rootNameLookup = new XmlRootNameLookup();
+     }
+

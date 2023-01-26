@@ -1,0 +1,8 @@
+--- java_programs/FIND_FIRST_IN_SORTED.java.buggy	2022-07-29 12:20:05.845589958 -0400
++++ java_programs/FIND_FIRST_IN_SORTED.java.fixed	2022-07-29 12:20:05.845589958 -0400
+@@ -18,3 +18,3 @@
+ 
+-        while (lo <= hi) {
++        while (lo < hi) {
+             int mid = (lo + hi) / 2;
+

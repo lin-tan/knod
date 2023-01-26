@@ -1,0 +1,7 @@
+--- /src/main/java/org/jsoup/parser/CharacterReader.java.buggy	2022-07-29 11:12:50.789553398 -0400
++++ /src/main/java/org/jsoup/parser/CharacterReader.java.fixed	2022-07-29 11:12:50.789553398 -0400
+@@ -426,2 +426,3 @@
+             return new String(charBuf, start, count);
++if (count < 0 )return new String();
+ 
+

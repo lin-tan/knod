@@ -1,0 +1,8 @@
+--- java_programs/QUICKSORT.java.buggy	2022-07-29 12:20:34.122041161 -0400
++++ java_programs/QUICKSORT.java.fixed	2022-07-29 12:20:34.126041225 -0400
+@@ -25,3 +25,3 @@
+                 lesser.add(x);
+-            } else if (x > pivot) {
++            } else if (x >= pivot) {
+                 greater.add(x);
+

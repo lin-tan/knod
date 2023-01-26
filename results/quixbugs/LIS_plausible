@@ -1,0 +1,8 @@
+--- java_programs/LIS.java.buggy	2022-07-29 12:20:18.977799520 -0400
++++ java_programs/LIS.java.fixed	2022-07-29 12:20:18.977799520 -0400
+@@ -30,3 +30,3 @@
+                 ends.put(length+1, i);
+-                longest = length + 1;
++                longest = ends.size();
+             }
+

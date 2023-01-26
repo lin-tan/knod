@@ -1,0 +1,8 @@
+--- /src/main/java/com/fasterxml/jackson/databind/ser/std/DateTimeSerializerBase.java.buggy	2022-07-29 11:12:28.329206246 -0400
++++ /src/main/java/com/fasterxml/jackson/databind/ser/std/DateTimeSerializerBase.java.fixed	2022-07-29 11:12:28.329206246 -0400
+@@ -66,3 +66,3 @@
+         // for config overrides, in case of root value
+-        if (property == null) {
++        if (serializers == null ){
+             return this;
+

@@ -1,0 +1,9 @@
+--- /src/main/java/com/fasterxml/jackson/databind/ser/impl/WritableObjectId.java.buggy	2022-08-31 20:53:20.390707974 -0400
++++ /src/main/java/com/fasterxml/jackson/databind/ser/impl/WritableObjectId.java.fixed	2022-08-31 20:53:20.394708034 -0400
+@@ -49,2 +49,5 @@
+         //    need to use existing id if there is one:
++if (id != null ){
++return id;
++}
+             id = generator.generateId(forPojo);
+

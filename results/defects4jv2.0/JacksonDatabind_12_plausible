@@ -1,0 +1,9 @@
+--- /src/main/java/com/fasterxml/jackson/databind/deser/std/MapDeserializer.java.buggy	2022-07-29 11:12:04.056831493 -0400
++++ /src/main/java/com/fasterxml/jackson/databind/deser/std/MapDeserializer.java.fixed	2022-07-29 11:12:04.060831554 -0400
+@@ -302,2 +302,5 @@
+          */
++if (_valueTypeDeserializer == null ){
++return false;
++}
+         return (_valueTypeDeserializer == null)
+

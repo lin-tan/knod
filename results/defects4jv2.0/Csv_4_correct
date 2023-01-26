@@ -1,0 +1,9 @@
+--- /src/main/java/org/apache/commons/csv/CSVParser.java.buggy	2022-07-29 11:11:39.652455149 -0400
++++ /src/main/java/org/apache/commons/csv/CSVParser.java.fixed	2022-07-29 11:11:39.652455149 -0400
+@@ -287,2 +287,5 @@
+     public Map<String, Integer> getHeaderMap() {
++if (headerMap == null ){
++return null;
++}
+         return new LinkedHashMap<String, Integer>(this.headerMap);
+

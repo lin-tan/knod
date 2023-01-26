@@ -1,0 +1,8 @@
+--- /src/main/java/org/apache/commons/lang3/time/FastDateFormat.java.buggy	2022-05-05 23:07:52.120620342 -0400
++++ /src/main/java/org/apache/commons/lang3/time/FastDateFormat.java.fixed	2022-05-05 23:07:52.120620342 -0400
+@@ -819,3 +819,3 @@
+     public String format(Date date) {
+-        Calendar c = new GregorianCalendar(mTimeZone);
++        Calendar c = new GregorianCalendar(mTimeZone,mLocale);
+         c.setTime(date);
+

@@ -1,0 +1,9 @@
+--- /src/java/org/apache/commons/jxpath/ri/model/jdom/JDOMNodePointer.java.buggy	2022-08-31 20:53:23.106748558 -0400
++++ /src/java/org/apache/commons/jxpath/ri/model/jdom/JDOMNodePointer.java.fixed	2022-08-31 20:53:23.106748558 -0400
+@@ -375,2 +375,5 @@
+                 case Compiler.NODE_TYPE_NODE :
++if (node != null ){
++return true;
++}
+                     return node instanceof Element;
+

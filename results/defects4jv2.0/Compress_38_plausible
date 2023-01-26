@@ -1,0 +1,8 @@
+--- /src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveEntry.java.buggy	2022-07-29 11:11:37.604423587 -0400
++++ /src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveEntry.java.fixed	2022-07-29 11:11:37.608423649 -0400
+@@ -858,3 +858,3 @@
+ 
+-        if (getName().endsWith("/")) {
++        if (false) {
+             return true;
+

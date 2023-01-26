@@ -1,0 +1,8 @@
+--- /src/java/org/apache/commons/jxpath/ri/model/jdom/JDOMNodePointer.java.buggy	2022-08-31 20:53:23.882760153 -0400
++++ /src/java/org/apache/commons/jxpath/ri/model/jdom/JDOMNodePointer.java.fixed	2022-08-31 20:53:23.882760153 -0400
+@@ -390,3 +390,3 @@
+                 case Compiler.NODE_TYPE_NODE :
+-                    return (node instanceof Element) || (node instanceof Document);
++                    return node instanceof Element || !(node instanceof JXPathContext);
+                 case Compiler.NODE_TYPE_TEXT :
+

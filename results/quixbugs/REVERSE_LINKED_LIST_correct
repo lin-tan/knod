@@ -1,0 +1,7 @@
+--- java_programs/REVERSE_LINKED_LIST.java.buggy	2022-07-29 12:20:36.134073262 -0400
++++ java_programs/REVERSE_LINKED_LIST.java.fixed	2022-07-29 12:20:36.134073262 -0400
+@@ -19,2 +19,3 @@
+             node.setSuccessor(prevnode);
++prevnode = node;
+             node = nextnode;
+

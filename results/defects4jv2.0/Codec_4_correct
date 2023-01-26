@@ -1,0 +1,8 @@
+--- /src/java/org/apache/commons/codec/binary/Base64.java.buggy	2022-07-29 11:11:15.024075827 -0400
++++ /src/java/org/apache/commons/codec/binary/Base64.java.fixed	2022-07-29 11:11:15.028075888 -0400
+@@ -224,3 +224,3 @@
+     public Base64() {
+-        this(false);
++        this(MASK_6BITS,null);
+     }
+

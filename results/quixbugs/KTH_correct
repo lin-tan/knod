@@ -1,0 +1,8 @@
+--- java_programs/KTH.java.buggy	2022-07-29 12:20:14.945735180 -0400
++++ java_programs/KTH.java.fixed	2022-07-29 12:20:14.945735180 -0400
+@@ -25,3 +25,3 @@
+         } else if (k >= num_lessoreq) {
+-            return kth(above, k);
++            return kth(above,k - num_lessoreq);
+         } else {
+

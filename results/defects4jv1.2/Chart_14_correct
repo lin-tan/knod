@@ -1,0 +1,39 @@
+--- source/org/jfree/chart/plot/CategoryPlot.java.buggy	2022-05-05 23:04:32.830181109 -0400
++++ source/org/jfree/chart/plot/CategoryPlot.java.fixed	2022-05-05 23:04:32.834181158 -0400
+@@ -2165,2 +2165,5 @@
+         }
++if (markers == null ){
++return false;
++}
+         boolean removed = markers.remove(marker);
+
+
+--- source/org/jfree/chart/plot/CategoryPlot.java.buggy	2022-05-05 23:04:32.830181109 -0400
++++ source/org/jfree/chart/plot/CategoryPlot.java.fixed	2022-05-05 23:04:32.834181158 -0400
+@@ -2447,2 +2450,5 @@
+         }
++if (markers == null ){
++return false;
++}
+         boolean removed = markers.remove(marker);
+
+
+--- source/org/jfree/chart/plot/XYPlot.java.buggy	2022-05-05 23:04:32.830181109 -0400
++++ source/org/jfree/chart/plot/XYPlot.java.fixed	2022-05-05 23:04:32.834181158 -0400
+@@ -2292,2 +2292,5 @@
+         }
++if (markers == null ){
++return false;
++}
+         boolean removed = markers.remove(marker);
+
+
+--- source/org/jfree/chart/plot/XYPlot.java.buggy	2022-05-05 23:04:32.830181109 -0400
++++ source/org/jfree/chart/plot/XYPlot.java.fixed	2022-05-05 23:04:32.834181158 -0400
+@@ -2528,2 +2531,5 @@
+         }
++if (markers == null ){
++return false;
++}
+         boolean removed = markers.remove(marker);
+

@@ -1,0 +1,8 @@
+--- /src/main/java/org/apache/commons/math/util/FastMath.java.buggy	2022-05-05 23:09:32.221845347 -0400
++++ /src/main/java/org/apache/commons/math/util/FastMath.java.fixed	2022-05-05 23:09:32.225845396 -0400
+@@ -3481,3 +3481,3 @@
+     public static float max(final float a, final float b) {
+-        return (a <= b) ? b : (Float.isNaN(a + b) ? Float.NaN : b);
++        return a <= b ? b : Float.isNaN(a + b) ? Float.NaN : a;
+     }
+

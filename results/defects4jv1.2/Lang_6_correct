@@ -1,0 +1,8 @@
+--- /src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java.buggy	2022-05-05 23:07:41.480490126 -0400
++++ /src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java.fixed	2022-05-05 23:07:41.480490126 -0400
+@@ -94,3 +94,3 @@
+             for (int pt = 0; pt < consumed; pt++) {
+-                pos += Character.charCount(Character.codePointAt(input, pos));
++                pos += Character.charCount(Character.codePointAt(input,pt));
+             }
+

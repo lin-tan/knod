@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/plot/MultiplePiePlot.java.buggy	2022-05-05 23:06:00.603255488 -0400
++++ /source/org/jfree/chart/plot/MultiplePiePlot.java.fixed	2022-05-05 23:06:00.603255488 -0400
+@@ -144,3 +144,3 @@
+         super();
+-        this.dataset = dataset;
++        this.setDataset(dataset);
+         PiePlot piePlot = new PiePlot(null);
+

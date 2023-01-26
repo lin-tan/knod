@@ -1,0 +1,8 @@
+--- /src/main/java/org/jsoup/parser/CharacterReader.java.buggy	2022-07-29 11:12:43.273437188 -0400
++++ /src/main/java/org/jsoup/parser/CharacterReader.java.fixed	2022-07-29 11:12:43.277437250 -0400
+@@ -299,3 +299,3 @@
+         char c = input[pos];
+-        return (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z');
++        return c >= 'A' || c >= 'Z' && c >= 'a' && c <= 'z';
+     }
+

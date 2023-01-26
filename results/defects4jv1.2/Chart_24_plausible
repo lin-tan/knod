@@ -1,0 +1,9 @@
+--- /source/org/jfree/chart/renderer/GrayPaintScale.java.buggy	2022-05-05 23:06:12.423400162 -0400
++++ /source/org/jfree/chart/renderer/GrayPaintScale.java.fixed	2022-05-05 23:06:12.423400162 -0400
+@@ -125,4 +125,3 @@
+         v = Math.min(v, this.upperBound);
+-        int g = (int) ((value - this.lowerBound) / (this.upperBound 
+-                - this.lowerBound) * 255.0);
++        int g = (int) ((v - this.lowerBound - this.lowerBound) * 255.0);;
+         return new Color(g, g, g);
+

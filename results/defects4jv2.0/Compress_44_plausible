@@ -1,0 +1,7 @@
+--- /src/main/java/org/apache/commons/compress/utils/ChecksumCalculatingInputStream.java.buggy	2022-08-31 20:51:12.376795542 -0400
++++ /src/main/java/org/apache/commons/compress/utils/ChecksumCalculatingInputStream.java.fixed	2022-08-31 20:51:12.376795542 -0400
+@@ -37,2 +37,3 @@
+         this.checksum = checksum;
++getValue();
+         this.in = in;
+

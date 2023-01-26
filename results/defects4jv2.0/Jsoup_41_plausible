@@ -1,0 +1,8 @@
+--- /src/main/java/org/jsoup/nodes/Element.java.buggy	2022-07-29 11:12:40.185389454 -0400
++++ /src/main/java/org/jsoup/nodes/Element.java.fixed	2022-07-29 11:12:40.189389516 -0400
+@@ -1174,3 +1174,3 @@
+ 
+-        return this == o;
++        return this != null && this != o;
+     }
+

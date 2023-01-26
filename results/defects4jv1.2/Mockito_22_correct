@@ -1,0 +1,9 @@
+--- /src/org/mockito/internal/matchers/Equality.java.buggy	2022-05-05 23:10:15.546375506 -0400
++++ /src/org/mockito/internal/matchers/Equality.java.fixed	2022-05-05 23:10:15.546375506 -0400
+@@ -12,2 +12,5 @@
+     public static boolean areEqual(Object o1, Object o2) {
++if (o1 == o2 ){
++return true;
++}
+         if (o1 == null || o2 == null) {
+

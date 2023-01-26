@@ -1,0 +1,10 @@
+--- /src/com/google/javascript/jscomp/CommandLineRunner.java.buggy	2022-08-31 20:51:08.780741831 -0400
++++ /src/com/google/javascript/jscomp/CommandLineRunner.java.fixed	2022-08-31 20:51:08.780741831 -0400
+@@ -432,4 +432,4 @@
+     }
+-    if (flags.process_closure_primitives) {
+-      options.closurePass = true;
++    if (!flags.process_closure_primitives ){
++options.closurePass = false;
+     }
+

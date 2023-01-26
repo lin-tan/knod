@@ -1,0 +1,9 @@
+--- /src/com/google/javascript/jscomp/LightweightMessageFormatter.java.buggy	2022-05-05 23:06:59.403975167 -0400
++++ /src/com/google/javascript/jscomp/LightweightMessageFormatter.java.fixed	2022-05-05 23:06:59.403975167 -0400
+@@ -96,4 +96,3 @@
+       // at the end of the line
+-      if (excerpt.equals(LINE)
+-          && 0 <= charno && charno < sourceExcerpt.length()) {
++      if (excerpt.equals(LINE) && 0 <= charno && charno <= sourceExcerpt.length()) {
+         for (int i = 0; i < charno; i++) {
+

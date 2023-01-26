@@ -1,0 +1,7 @@
+--- /src/main/java/com/fasterxml/jackson/core/json/async/NonBlockingJsonParser.java.buggy	2022-07-29 11:11:59.736764839 -0400
++++ /src/main/java/com/fasterxml/jackson/core/json/async/NonBlockingJsonParser.java.fixed	2022-07-29 11:11:59.740764901 -0400
+@@ -107,2 +107,3 @@
+         // And then update buffer settings
++_currBufferStart = start;
+         _inputBuffer = buf;
+

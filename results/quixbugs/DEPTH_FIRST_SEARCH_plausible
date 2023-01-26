@@ -1,0 +1,9 @@
+--- java_programs/DEPTH_FIRST_SEARCH.java.buggy	2022-07-29 12:20:02.813541570 -0400
++++ java_programs/DEPTH_FIRST_SEARCH.java.fixed	2022-07-29 12:20:02.813541570 -0400
+@@ -22,2 +22,5 @@
+                 } else {
++if (node.getPredecessors() == null ){
++return true;
++}
+                     for (Node successornodes : node.getSuccessors()) {
+

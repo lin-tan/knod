@@ -1,0 +1,8 @@
+--- /src/main/java/org/apache/commons/compress/archivers/zip/Zip64ExtendedInformationExtraField.java.buggy	2022-07-29 11:11:24.432220671 -0400
++++ /src/main/java/org/apache/commons/compress/archivers/zip/Zip64ExtendedInformationExtraField.java.fixed	2022-07-29 11:11:24.432220671 -0400
+@@ -258,3 +258,3 @@
+                 + (hasDiskStart ? WORD : 0);
+-            if (rawCentralDirectoryData.length != expectedLength) {
++            if (rawCentralDirectoryData.length < expectedLength) {
+                 throw new ZipException("central directory zip64 extended"
+

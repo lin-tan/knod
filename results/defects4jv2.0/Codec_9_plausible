@@ -1,0 +1,8 @@
+--- /src/java/org/apache/commons/codec/binary/Base64.java.buggy	2022-07-29 11:11:16.724101995 -0400
++++ /src/java/org/apache/commons/codec/binary/Base64.java.fixed	2022-07-29 11:11:16.724101995 -0400
+@@ -826,3 +826,3 @@
+ 
+-        long len = getEncodeLength(binaryData, MIME_CHUNK_SIZE, CHUNK_SEPARATOR);
++        long len = getEncodeLength(binaryData,0,CHUNK_SEPARATOR);
+         if (len > maxResultSize) {
+

@@ -1,0 +1,8 @@
+--- /src/java/org/apache/commons/codec/binary/Base64.java.buggy	2022-07-29 11:11:14.392066099 -0400
++++ /src/java/org/apache/commons/codec/binary/Base64.java.fixed	2022-07-29 11:11:14.396066161 -0400
+@@ -445,3 +445,3 @@
+             }
+-            if (lineLength > 0) {
++            if (pos > 0 && lineLength > 0) {
+                 System.arraycopy(lineSeparator, 0, buf, pos, lineSeparator.length);
+

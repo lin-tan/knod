@@ -1,0 +1,11 @@
+--- /src/com/google/javascript/jscomp/MinimizeExitPoints.java.buggy	2022-05-05 23:07:31.516368180 -0400
++++ /src/com/google/javascript/jscomp/MinimizeExitPoints.java.fixed	2022-05-05 23:07:31.516368180 -0400
+@@ -140,6 +140,3 @@
+        */
+-      if (NodeUtil.hasFinally(n)) {
+-        Node finallyBlock = n.getLastChild();
+-        tryMinimizeExits(finallyBlock, exitType, labelName);
+-      }
++      
+     }
+

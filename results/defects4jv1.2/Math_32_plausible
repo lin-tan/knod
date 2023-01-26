@@ -1,0 +1,8 @@
+--- /src/main/java/org/apache/commons/math3/geometry/euclidean/twod/PolygonsSet.java.buggy	2022-05-05 23:08:54.497383700 -0400
++++ /src/main/java/org/apache/commons/math3/geometry/euclidean/twod/PolygonsSet.java.fixed	2022-05-05 23:08:54.497383700 -0400
+@@ -135,3 +135,3 @@
+             final BSPTree<Euclidean2D> tree = getTree(false);
+-            if ((Boolean) tree.getAttribute()) {
++            if (tree.getAttribute() instanceof Boolean) {
+                 // the instance covers the whole space
+

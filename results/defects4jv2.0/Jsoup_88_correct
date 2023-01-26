@@ -1,0 +1,9 @@
+--- /src/main/java/org/jsoup/nodes/Attribute.java.buggy	2022-07-29 11:12:56.225637472 -0400
++++ /src/main/java/org/jsoup/nodes/Attribute.java.fixed	2022-07-29 11:12:56.225637472 -0400
+@@ -79,2 +79,5 @@
+     public String getValue() {
++if (val == null ){
++return "";
++}
+         return val;
+

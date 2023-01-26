@@ -1,0 +1,7 @@
+--- java_programs/DETECT_CYCLE.java.buggy	2022-07-29 12:20:03.833557849 -0400
++++ java_programs/DETECT_CYCLE.java.fixed	2022-07-29 12:20:03.833557849 -0400
+@@ -17,2 +17,3 @@
+         while (true) {
++if (hare == null )return false;
+             if (hare.getSuccessor() == null)
+

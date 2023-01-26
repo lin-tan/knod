@@ -1,0 +1,8 @@
+--- /src/main/java/com/fasterxml/jackson/databind/deser/std/FromStringDeserializer.java.buggy	2022-08-31 20:53:22.410738158 -0400
++++ /src/main/java/com/fasterxml/jackson/databind/deser/std/FromStringDeserializer.java.fixed	2022-08-31 20:53:22.410738158 -0400
+@@ -118,3 +118,3 @@
+                 //    `null` as value.
+-                if (_deserialize(text, ctxt) != null) {
++                if (text != null ){
+                 return _deserialize(text, ctxt);
+

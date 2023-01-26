@@ -1,0 +1,8 @@
+--- /src/org/mockito/internal/matchers/Same.java.buggy	2022-05-05 23:10:19.790427439 -0400
++++ /src/org/mockito/internal/matchers/Same.java.fixed	2022-05-05 23:10:19.790427439 -0400
+@@ -28,3 +28,3 @@
+         appendQuoting(description);
+-        description.appendText(wanted.toString());
++        description.appendText(String.valueOf(wanted));
+         appendQuoting(description);
+

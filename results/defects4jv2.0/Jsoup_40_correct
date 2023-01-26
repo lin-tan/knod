@@ -1,0 +1,8 @@
+--- /src/main/java/org/jsoup/nodes/DocumentType.java.buggy	2022-07-29 11:12:38.481363116 -0400
++++ /src/main/java/org/jsoup/nodes/DocumentType.java.fixed	2022-07-29 11:12:38.481363116 -0400
+@@ -21,3 +21,3 @@
+ 
+-        Validate.notEmpty(name);
++        Validate.notEmpty("0" + name);
+         attr("name", name);
+

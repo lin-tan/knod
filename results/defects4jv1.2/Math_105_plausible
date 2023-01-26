@@ -1,0 +1,8 @@
+--- /src/java/org/apache/commons/math/stat/regression/SimpleRegression.java.buggy	2022-05-05 23:10:02.046210307 -0400
++++ /src/java/org/apache/commons/math/stat/regression/SimpleRegression.java.fixed	2022-05-05 23:10:02.046210307 -0400
+@@ -263,3 +263,3 @@
+     public double getSumSquaredErrors() {
+-        return sumYY - sumXY * sumXY / sumXX;
++        return Math.abs(sumYY - sumXY * sumXY / sumXX);
+     }
+

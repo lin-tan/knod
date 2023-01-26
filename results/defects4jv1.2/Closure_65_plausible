@@ -1,0 +1,9 @@
+--- /src/com/google/javascript/jscomp/CodeGenerator.java.buggy	2022-05-05 23:07:03.252022263 -0400
++++ /src/com/google/javascript/jscomp/CodeGenerator.java.fixed	2022-05-05 23:07:03.252022263 -0400
+@@ -1014,3 +1014,4 @@
+       switch (c) {
+-        case '\0': sb.append("\\0"); break;
++        case '\0': sb.append("\\000");
++break;
+         case '\n': sb.append("\\n"); break;
+

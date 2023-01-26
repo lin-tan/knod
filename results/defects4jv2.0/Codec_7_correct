@@ -1,0 +1,8 @@
+--- /src/java/org/apache/commons/codec/binary/Base64.java.buggy	2022-07-29 11:11:16.120092697 -0400
++++ /src/java/org/apache/commons/codec/binary/Base64.java.fixed	2022-07-29 11:11:16.120092697 -0400
+@@ -669,3 +669,3 @@
+     public static String encodeBase64String(byte[] binaryData) {
+-        return StringUtils.newStringUtf8(encodeBase64(binaryData, true));
++        return StringUtils.newStringUtf8(encodeBase64(binaryData,false));
+     }
+

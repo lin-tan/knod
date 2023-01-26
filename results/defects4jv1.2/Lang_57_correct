@@ -1,0 +1,8 @@
+--- /src/java/org/apache/commons/lang/LocaleUtils.java.buggy	2022-05-05 23:08:18.528943529 -0400
++++ /src/java/org/apache/commons/lang/LocaleUtils.java.fixed	2022-05-05 23:08:18.528943529 -0400
+@@ -222,3 +222,3 @@
+     public static boolean isAvailableLocale(Locale locale) {
+-        return cAvailableLocaleSet.contains(locale);
++        return cAvailableLocaleList.contains(locale);
+     }
+

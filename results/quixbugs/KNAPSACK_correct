@@ -1,0 +1,8 @@
+--- java_programs/KNAPSACK.java.buggy	2022-07-29 12:20:12.929703009 -0400
++++ java_programs/KNAPSACK.java.fixed	2022-07-29 12:20:12.929703009 -0400
+@@ -29,3 +29,3 @@
+                 }
+-                else if (weight < j) {
++                else if (weight <= j) {
+                     memo[i][j] = Math.max(memo[i - 1][j], value + memo[i - 1][j - weight]);
+

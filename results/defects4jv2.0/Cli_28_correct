@@ -1,0 +1,13 @@
+--- /src/java/org/apache/commons/cli/Parser.java.buggy	2022-07-29 11:10:47.975659812 -0400
++++ /src/java/org/apache/commons/cli/Parser.java.fixed	2022-07-29 11:10:47.975659812 -0400
+@@ -289,4 +289,9 @@
+                     // option to the CommandLine
++                    if (options == null ){
+                     break;
+                 }
++else {
++continue  ;
++}
++                }
+ 
+

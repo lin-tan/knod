@@ -1,0 +1,7 @@
+--- /src/java/org/apache/commons/lang/text/ExtendedMessageFormat.java.buggy	2022-05-05 23:08:08.020814931 -0400
++++ /src/java/org/apache/commons/lang/text/ExtendedMessageFormat.java.fixed	2022-05-05 23:08:08.024814980 -0400
+@@ -421,2 +421,3 @@
+         if (escapingOn && c[start] == QUOTE) {
++next(pos);
+             return appendTo == null ? null : appendTo.append(QUOTE);
+

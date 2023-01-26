@@ -1,0 +1,8 @@
+--- /src/main/java/org/jsoup/parser/TokeniserState.java.buggy	2022-07-29 11:12:33.589287515 -0400
++++ /src/main/java/org/jsoup/parser/TokeniserState.java.fixed	2022-07-29 11:12:33.589287515 -0400
+@@ -557,3 +557,3 @@
+                 t.dataBuffer.append(name);
+-                r.advance();
++                r.pos();
+                 return;
+

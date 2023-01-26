@@ -1,0 +1,15 @@
+--- src/main/java/org/apache/commons/lang3/time/FastDateParser.java.buggy	2022-05-05 23:05:07.510605627 -0400
++++ src/main/java/org/apache/commons/lang3/time/FastDateParser.java.fixed	2022-05-05 23:05:07.510605627 -0400
+@@ -307,7 +307,4 @@
+             if(Character.isWhitespace(c)) {
+-                if(!wasWhite) {
+                     wasWhite= true;
+-                    regex.append("\\s*+");
+-                }
+-                continue;
++wasWhite = true;
+             }
+
+
+Equivalent:
+this patch doesn't change regex, thus doesn't affect the following code, which is equivalent to deleting this code snippet.

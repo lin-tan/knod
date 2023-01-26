@@ -1,0 +1,8 @@
+--- java_programs/TOPOLOGICAL_ORDERING.java.buggy	2022-07-29 12:20:44.234202493 -0400
++++ java_programs/TOPOLOGICAL_ORDERING.java.fixed	2022-07-29 12:20:44.234202493 -0400
+@@ -16,3 +16,3 @@
+             for (Node nextNode : node.getSuccessors()) {
+-                if (orderedNodes.containsAll(nextNode.getSuccessors()) && !orderedNodes.contains(nextNode)) {
++                if (orderedNodes.containsAll(nextNode.getPredecessors()) && !orderedNodes.contains(nextNode)) {
+                     orderedNodes.add(nextNode);
+

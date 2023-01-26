@@ -1,0 +1,7 @@
+--- /src/main/java/org/jsoup/parser/TokeniserState.java.buggy	2022-07-29 11:12:44.873461924 -0400
++++ /src/main/java/org/jsoup/parser/TokeniserState.java.fixed	2022-07-29 11:12:44.873461924 -0400
+@@ -882,2 +882,3 @@
+                     t.error(this);
++r.unconsume();
+                     t.transition(BeforeAttributeName);
+

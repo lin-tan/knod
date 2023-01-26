@@ -1,0 +1,9 @@
+--- /src/com/google/javascript/jscomp/RemoveUnusedVars.java.buggy	2022-05-05 23:06:16.347448191 -0400
++++ /src/com/google/javascript/jscomp/RemoveUnusedVars.java.fixed	2022-05-05 23:06:16.351448240 -0400
+@@ -378,2 +378,5 @@
+     // See http://code.google.com/p/closure-compiler/issues/detail?id=253
++if (!removeGlobals ){
++return;
++}
+ 
+

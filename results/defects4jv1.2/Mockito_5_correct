@@ -1,0 +1,8 @@
+--- /src/org/mockito/internal/verification/VerificationOverTimeImpl.java.buggy	2022-05-05 23:10:06.594265961 -0400
++++ /src/org/mockito/internal/verification/VerificationOverTimeImpl.java.fixed	2022-05-05 23:10:06.594265961 -0400
+@@ -90,3 +90,3 @@
+             }
+-            catch (org.mockito.exceptions.verification.junit.ArgumentsAreDifferent e) {
++            catch (AssertionError e) {
+                 error = handleVerifyException(e);
+

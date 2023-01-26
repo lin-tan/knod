@@ -1,0 +1,11 @@
+--- /src/java/org/apache/commons/math/util/MathUtils.java.buggy	2022-05-05 23:09:59.086174086 -0400
++++ /src/java/org/apache/commons/math/util/MathUtils.java.fixed	2022-05-05 23:09:59.086174086 -0400
+@@ -411,3 +411,3 @@
+     public static int gcd(int u, int v) {
+-        if (u * v == 0) {
++        if ((long)u * v == 0) {
+             return (Math.abs(u) + Math.abs(v));
+
+
+Equivalent:
+this bug is triggered when u * v exceeds the rang of int. so converting u to long solve the bug.

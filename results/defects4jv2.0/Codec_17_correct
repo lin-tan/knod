@@ -1,0 +1,9 @@
+--- /src/main/java/org/apache/commons/codec/binary/StringUtils.java.buggy	2022-07-29 11:11:18.308126379 -0400
++++ /src/main/java/org/apache/commons/codec/binary/StringUtils.java.fixed	2022-07-29 11:11:18.308126379 -0400
+@@ -338,2 +338,5 @@
+     public static String newStringIso8859_1(final byte[] bytes) {
++if (bytes == null ){
++return null;
++}
+         return new String(bytes, Charsets.ISO_8859_1);
+

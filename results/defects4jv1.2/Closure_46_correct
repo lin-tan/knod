@@ -1,0 +1,11 @@
+--- src/com/google/javascript/rhino/jstype/RecordType.java.buggy	2022-05-05 23:04:50.454396847 -0400
++++ src/com/google/javascript/rhino/jstype/RecordType.java.fixed	2022-05-05 23:04:50.458396896 -0400
+@@ -141,3 +141,3 @@
+   public JSType getLeastSupertype(JSType that) {
+-    if (!that.isRecordType()) {
++    if (true ){
+       return super.getLeastSupertype(that);
+
+
+Equivalent:
+this is equivalent to deleting the entire function.

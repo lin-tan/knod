@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="java_testcases.junit.crt_program.FLATTEN_TEST" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-03-19T23:51:09" hostname="LTPC" time="0.004">
+  <properties/>
+  <testcase name="test_0" classname="java_testcases.junit.crt_program.FLATTEN_TEST" time="0.002"/>
+  <testcase name="test_1" classname="java_testcases.junit.crt_program.FLATTEN_TEST" time="0.0"/>
+  <testcase name="test_2" classname="java_testcases.junit.crt_program.FLATTEN_TEST" time="0.001"/>
+  <testcase name="test_3" classname="java_testcases.junit.crt_program.FLATTEN_TEST" time="0.0"/>
+  <testcase name="test_4" classname="java_testcases.junit.crt_program.FLATTEN_TEST" time="0.0"/>
+  <testcase name="test_5" classname="java_testcases.junit.crt_program.FLATTEN_TEST" time="0.001"/>
+  <testcase name="test_6" classname="java_testcases.junit.crt_program.FLATTEN_TEST" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

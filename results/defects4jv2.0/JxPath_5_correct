@@ -1,0 +1,11 @@
+--- /src/java/org/apache/commons/jxpath/ri/model/NodePointer.java.buggy	2022-07-29 11:12:59.733691739 -0400
++++ /src/java/org/apache/commons/jxpath/ri/model/NodePointer.java.fixed	2022-07-29 11:12:59.733691739 -0400
+@@ -664,5 +664,4 @@
+         if (depth1 == 1) {
+-            throw new JXPathException(
+-                    "Cannot compare pointers that do not belong to the same tree: '"
+-                            + p1 + "' and '" + p2 + "'");
++            JXPathContext.newContext("Cannot compare pointers that do not belong to the same tree: '" + p1 + "' and '" + p2 + "'");
++return 0;
+         }
+

@@ -1,0 +1,9 @@
+--- java_programs/IS_VALID_PARENTHESIZATION.java.buggy	2022-07-29 12:20:11.909686732 -0400
++++ java_programs/IS_VALID_PARENTHESIZATION.java.fixed	2022-07-29 12:20:11.909686732 -0400
+@@ -16,2 +16,5 @@
+ 	}
++if (depth > 0 ){
++return false;
++}
+ 	return true;
+

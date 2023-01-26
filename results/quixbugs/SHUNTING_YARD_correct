@@ -1,0 +1,7 @@
+--- java_programs/SHUNTING_YARD.java.buggy	2022-07-29 12:20:40.166137592 -0400
++++ java_programs/SHUNTING_YARD.java.fixed	2022-07-29 12:20:40.166137592 -0400
+@@ -33,2 +33,3 @@
+                 }
++opstack.push(token);
+             }
+

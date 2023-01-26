@@ -1,0 +1,8 @@
+--- /src/main/java/com/fasterxml/jackson/core/json/ReaderBasedJsonParser.java.buggy	2022-07-29 11:11:57.972737626 -0400
++++ /src/main/java/com/fasterxml/jackson/core/json/ReaderBasedJsonParser.java.fixed	2022-07-29 11:11:57.976737688 -0400
+@@ -1962,3 +1962,3 @@
+             int i = (int) c;
+-            if (i <= maxCode) {
++            if (i < maxCode) {
+                 if (codes[i] != 0) {
+

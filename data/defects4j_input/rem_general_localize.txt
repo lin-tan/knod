@@ -1,0 +1,158 @@
+1797,13-1797,27	0	dataset != null
+65,16-65,40	0	" title=\"" + toolTipText
+275,9-275,58	0	PathIterator iterator2 = p1.getPathIterator(null);
+145,9-145,31	0	this.dataset = dataset;
+2166,9-2166,49	0	boolean removed = markers.remove(marker);
+95,9-95,51	0	super(paint, stroke, paint, stroke, alpha);
+126,9-127,43	0	int g = (int) ((value - this.lowerBound) / (this.upperBound - this.lowerBound) * 255.0)
+4493,21-4493,54	0	Collection c = r.getAnnotations();
+175,9-175,77	0	this(time, RegularTimePeriod.DEFAULT_TIME_ZONE, Locale.getDefault());
+944,13-944,24	1	endIndex < 0
+632,13-632,60	0	option.hasArg() && (option.getArgName() != null)
+825,13-826,77	0	throw new IllegalStateException("Total width is less than the width of the argument and indent " + "- no room for the description");
+825,13-825,40	0	nextLineTabStop = width - 1;
+290,21-290,26	0	break;
+812,13-812,60	0	pos = findWrapPos(text, width, nextLineTabStop);
+369,62-406,3	0	{ Node function = fnScope.getRootNode(); Preconditions.checkState(function.isFunction()); if (NodeUtil.isGetOrSetKey(function.getParent())) { return; } Node argList = getFunctionArgList(function); boolean modifyCallers = modifyCallSites && callSiteOptimizer.canModifyCallers(function); if (!modifyCallers) { Node lastArg; while ((lastArg = argList.getLastChild()) != null) { Var var = fnScope.getVar(lastArg.getString()); if (!referenced.contains(var)) { argList.removeChild(lastArg); compiler.reportCodeChange(); } else { break; } } } else { callSiteOptimizer.optimize(fnScope, referenced); } }
+1417,7-1417,57	0	return allResultsMatch(n, MAY_BE_STRING_PREDICATE);
+291,9-291,22	0	result != null
+1314,12-1319,5	0	if (n.getJSType() != null && parent.isAssign()) { return; } else if (validator.expectNotNullOrUndefined(t, n, childType, "No properties on this expression", getNativeType(OBJECT_TYPE))) { checkPropertyAccess(childType, property.getString(), t, n); }
+493,36-512,7	0	{ String name = child.getString(); T type = typeSystem.getType(getScope(), n, name); Property prop = getProperty(name); if (!prop.scheduleRenaming(child, processProperty(t, prop, type, null))) { if (propertiesToErrorFor.containsKey(name)) { compiler.report(JSError.make(t.getSourceName(), child, propertiesToErrorFor.get(name), Warnings.INVALIDATION, name, (type == null ? "null" : type.toString()), n.toString(), "")); } } }
+366,15-366,29	0	case Token.INC:
+252,9-252,94	0	comment.getValue().indexOf("/* @") != -1 || comment.getValue().indexOf("\n * @") != -1
+285,9-285,43	0	Context rhsContext = Context.OTHER;
+1661,11-1661,24	0	fnType != null
+141,7-144,7	0	if (NodeUtil.hasFinally(n)) { Node finallyBlock = n.getLastChild(); tryMinimizeExits(finallyBlock, exitType, labelName); }
+767,15-767,67	0	cfa.createEdge(fromNode, Branch.UNCOND, finallyNode);
+84,36-109,7	0	{ if (n == null) { return false; } if (n.isCall() && NodeUtil.functionCallHasSideEffects(n)) { return true; } if (n.isNew() && NodeUtil.constructorCallHasSideEffects(n)) { return true; } for (Node c = n.getFirstChild(); c != null; c = c.getNext()) { if (!ControlFlowGraph.isEnteringNewCfgNode(c) && apply(c)) { return true; } } return false; }
+1996,11-1996,32	0	t.getScopeDepth() <= 2
+1288,11-1288,76	0	options.dependencyOptions.needsManagement() && options.closurePass
+
+220,11-220,23	0	value != null
+561,31-576,7	0	{ Node callNode = reference.getParent(); if (reference.getParent().isCall()) { CodingConvention convention = compiler.getCodingConvention(); SubclassRelationship relationship = convention.getClassesDefinedByCall(callNode); if (relationship != null) { return false; } } }
+245,9-245,28	0	x < 0 && prev == '-'
+635,11-635,48	0	JsName name = getName(ns.name, false);
+142,5-144,5	0	if (!that.isRecordType()) { return super.getLeastSupertype(that); }
+166,33-194,9	0	{ Preconditions.checkState(parent.getFirstChild() == name); if (gramps.isCall() && gramps.getFirstChild() == parent) { return false; } String propName = parent.getLastChild().getString(); if (!validProperties.contains(propName)) { if (NodeUtil.isVarOrSimpleAssignLhs(parent, gramps)) { validProperties.add(propName); } else { return false; } } continue; }
+745,5-745,19	0	return len > 0;
+117,5-117,44	0	return NodeUtil.isFunctionExpression(n);
+197,15-197,28	0	target != null
+255,9-255,43	0	options.checkGlobalThisLevel.isOn()
+97,11-98,59	0	excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length()
+1015,9-1015,43	0	case '\0': sb.append("\\0"); break;
+1744,15-1745,51	0	defineSlot(astParameter, functionNode, jsDocParameter.getJSType(), true)
+416,7-418,43	0	boolean isOverride = t.inGlobalScope() && parent.getType() == Token.ASSIGN && parent.getFirstChild() == getprop
+1045,17-1045,37	0	c > 0x1f && c <= 0x7f
+967,9-967,43	0	case '\r': sb.append("\\r"); break;
+163,5-163,64	0	return isNoType() || isNoObjectType() || isNoResolvedType();
+2465,9-2465,20	1	return true;
+789,11-789,50	0	int indexOfDot = namespace.indexOf('.');
+339,9-339,54	0	return new String(bytes, Charsets.ISO_8859_1);
+81,9-81,108	0	return CharSequenceUtils.regionMatches(cs1, false, 0, cs2, 0, Math.max(cs1.length(), cs2.length()));
+446,17-446,30	0	lineLength > 0
+455,24-455,59	0	contains(value, index + 1, 4, "IER")
+455,24-455,59	0	contains(value, index + 1, 4, "IER")
+225,9-225,20	0	this(false);
+670,9-670,73	0	return StringUtils.newStringUtf8(encodeBase64(binaryData, true));
+169,21-171,21	0	if (c > 0 && b.length == len) { base64.setInitialBuffer(b, offset, len); }
+259,17-259,64	0	rawCentralDirectoryData.length != expectedLength
+112,17-112,65	0	dictSize |= (coder.properties[i + 1] << (8 * i));
+135,13-137,13	0	if (currentByte == 0) { break; }
+239,13-241,13	0	if (read == 0 && inf.finished()) { return -1; }
+58,13-58,27	0	current == '\n'
+1039,21-1039,97	0	newRecord && (c < '0' || c > '9' && c < 'A' || c > 'Z' && c < 'a' || c > 'z')
+1189,17-1215,17	0	if (newRecord && (c < 0x20 || c > 0x21 && c < 0x23 || c > 0x2B && c < 0x2D || c > 0x7E)) { quote = true; } else if (c <= COMMENT) { quote = true; } else { while (pos < end) { c = value.charAt(pos); if (c == LF || c == CR || c == quoteChar || c == delimChar) { quote = true; break; } pos++; } if (!quote) { pos = end - 1; c = value.charAt(pos); if (c <= SP) { quote = true; } } }
+288,9-288,66	0	return new LinkedHashMap<String, Integer>(this.headerMap);
+325,13-325,40	0	out.append(recordSeparator);
+182,17-182,53	0	map.put(entry.getKey(), values[col]);
+67,7-67,43	0	typeAdapter = typeAdapter.nullSafe();
+1963,17-1963,28	0	i <= maxCode
+193,13-193,37	0	char c = str.charAt(i++);
+307,9-307,51	0	if (!_hasSegments) return _currentSegment;
+67,9-69,9	0	if (property == null) { return this; }
+93,9-93,107	0	ReadableObjectId roid = ctxt.findObjectId(id, _objectIdReader.generator, _objectIdReader.resolver);
+180,28-180,75	0	TreeNode.class.isAssignableFrom(t.getRawClass())
+180,28-180,75	0	TreeNode.class.isAssignableFrom(t.getRawClass())
+794,21-794,70	0	ext.handlePropertyValue(p, ctxt, propName, buffer)
+81,17-81,87	0	visitFloatFormat(visitor, typeHint, JsonParser.NumberType.BIG_INTEGER);
+156,9-156,23	0	sb.append(';');
+50,13-50,47	0	id = generator.generateId(forPojo);
+50,13-50,47	0	id = generator.generateId(forPojo);
+119,17-121,17	0	if (_deserialize(text, ctxt) != null) { return _deserialize(text, ctxt); }
+119,17-121,17	0	if (_deserialize(text, ctxt) != null) { return _deserialize(text, ctxt); }
+735,13-735,59	0	paramName = candidate.findImplicitParamName(0);
+114,13-114,36	0	gen.writeObject(_value);
+298,21-298,61	0	buffer.assignParameter(typeProp, typeId);
+59,9-59,46	0	_rootNameLookup = src._rootNameLookup;
+558,17-558,28	0	r.advance();
+91,17-91,31	1	offset < length
+22,9-22,32	0	Validate.notEmpty(name);
+1175,9-1175,25	0	return this == o;
+574,17-574,38	0	element.equals(search)
+300,9-300,64	0	return (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z');
+125,17-125,43	0	attributes.remove(attrKey);
+1092,9-1092,57	0	final String classAttr = attributes.get("class");
+117,9-117,38	0	String elName = endTag.name();
+78,13-78,35	0	doc.childNodeSize() > 0
+80,9-80,19	0	return val;
+376,21-376,51	0	return node instanceof Element;
+42,16-42,84	0	compute(args[0].computeValue(context), args[1].computeValue(context))
+391,21-391,83	0	return (node instanceof Element) || (node instanceof Document);
+152,9-152,52	0	return ValueUtils.getLength(getBaseValue());
+665,13-667,57	0	throw new JXPathException("Cannot compare pointers that do not belong to the same tree: '" + p1 + "' and '" + p2 + "'");
+307,13-313,13	0	if (Character.isWhitespace(c)) { if (!wasWhite) { wasWhite = true; regex.append("\\s*+"); } continue; }
+265,17-265,66	0	cal1.get(Calendar.HOUR) == cal2.get(Calendar.HOUR)
+1672,5-1674,5	0	static float toJavaVersionInt(String version) { return toVersionInt(toJavaVersionIntArray(version, JAVA_VERSION_TRIM_SIZE)); }
+910,13-910,45	0	classes[i] = array[i].getClass();
+872,13-872,51	0	calendar = (Calendar) calendar.clone();
+1048,9-1048,68	0	return contains(str.toUpperCase(), searchStr.toUpperCase());
+422,13-422,68	0	return appendTo == null ? null : appendTo.append(QUOTE);
+662,9-698,9	0	switch(str.length()) { case 2: { char ch0 = str.charAt(0); char ch1 = str.charAt(1); return (ch0 == 'o' || ch0 == 'O') && (ch1 == 'n' || ch1 == 'N'); } case 3: { char ch = str.charAt(0); if (ch == 'y') { return (str.charAt(1) == 'e' || str.charAt(1) == 'E') && (str.charAt(2) == 's' || str.charAt(2) == 'S'); } if (ch == 'Y') { return (str.charAt(1) == 'E' || str.charAt(1) == 'e') && (str.charAt(2) == 'S' || str.charAt(2) == 's'); } } case 4: { char ch = str.charAt(0); if (ch == 't') { return (str.charAt(1) == 'r' || str.charAt(1) == 'R') && (str.charAt(2) == 'u' || str.charAt(2) == 'U') && (str.charAt(3) == 'e' || str.charAt(3) == 'E'); } if (ch == 'T') { return (str.charAt(1) == 'R' || str.charAt(1) == 'r') && (str.charAt(2) == 'U' || str.charAt(2) == 'u') && (str.charAt(3) == 'E' || str.charAt(3) == 'e'); } } }
+223,9-223,52	0	return cAvailableLocaleSet.contains(locale);
+884,17-884,54	0	str.getChars(0, strLen, buffer, size);
+95,17-95,78	0	pos += Character.charCount(Character.codePointAt(input, pos));
+1776,9-1776,42	0	int len = thisBuf.length - strLen;
+264,9-264,45	0	return sumYY - sumXY * sumXY / sumXX;
+183,16-183,54	0	FastMath.pow(2 * FastMath.PI, -dim / 2)
+268,9-268,98	0	return (double) (getSampleSize() * getNumberOfSuccesses()) / (double) getPopulationSize();
+597,9-597,43	0	return multiply(100).doubleValue();
+173,9-173,37	0	final int n1n2prod = n1 * n2;
+338,17-338,59	0	Precision.compareTo(entry, 0d, maxUlps) > 0
+209,9-209,38	0	return chromosomes.iterator();
+520,17-522,17	0	for (int i = 0; i < weights.length; i++) { sumWts += weights[i]; }
+189,21-189,26	2	break;
+305,13-305,23	1	return NaN;
+187,21-190,21	0	if (x == x1) { x0 = 0.5 * (x0 + x1 - FastMath.max(rtol * FastMath.abs(x1), atol)); f0 = computeObjectiveValue(x0); }
+216,39-246,5	0	{ if (index < 0 || index >= totalSize) { throw new OutOfRangeException(index, 0, totalSize); } final int[] indices = new int[dimension]; int count = 0; for (int i = 0; i < last; i++) { int idx = 0; final int offset = uniCounterOffset[i]; while (count <= index) { count += offset; ++idx; } --idx; count -= offset; indices[i] = idx; } int idx = 1; while (count < index) { count += idx; ++idx; } --idx; indices[last] = idx; return indices; }
+175,13-175,24	0	int sum = 0;
+121,9-121,53	0	return fit(new Gaussian.Parametric(), guess);
+3482,9-3482,67	0	return (a <= b) ? b : (Float.isNaN(a + b) ? Float.NaN : b);
+417,9-417,62	0	return (Double.isNaN(x) && Double.isNaN(y)) || x == y;
+258,13-258,67	0	chiSquare += residual * residual / residualsWeights[i];
+72,9-72,31	0	return solve(min, max);
+303,9-303,44	0	return getCumPct((Comparable<?>) v);
+1135,13-1135,30	0	int j = 4 * n - 1;
+82,17-82,59	0	MathUtils.compareTo(entry, 0, epsilon) >= 0
+198,13-198,26	0	fa * fb >= 0.0
+412,13-412,22	0	u * v == 0
+991,9-991,58	0	final BigDecimal[] out = new BigDecimal[v.length];
+13,13-13,36	0	o1 == null || o2 == null
+29,9-29,50	0	description.appendText(wanted.toString());
+48,9-48,68	0	return StringDescription.toString(m).equals(arg.toString());
+91,62-91,84	0	org.mockito.exceptions.verification.junit.ArgumentsAreDifferent e
+77,13-81,13	0	if (actualTypeArgument instanceof WildcardType) { contextualActualTypeParameters.put(typeParameter, boundsOf((WildcardType) actualTypeArgument)); } else { contextualActualTypeParameters.put(typeParameter, actualTypeArgument); }
+138,17-138,29	0	return -val1;
+900,20-900,34	0	offsetLocal > 0
+464,13-464,79	0	Partial newPartial = new Partial(iChronology, newTypes, newValues);
+1192,17-1192,72	0	EntityCollection entities = owner.getEntityCollection();
+300,18-308,13	0	if (stopAtNonOption) { process(token.substring(i)); } else { tokens.add(token); break; }
+36,13-36,32	0	str.startsWith("--")
+346,13-346,26	0	super.close();
+180,9-185,9	0	for (final Entry<String, Integer> entry : mapping.entrySet()) { final int col = entry.getValue().intValue(); if (col < values.length) { map.put(entry.getKey(), values[col]); } }
+371,9-371,55	0	return new LazilyParsedNumber(in.nextString());
+875,5-886,5	0	{ if (_hashShared) { _hashArea = Arrays.copyOf(_hashArea, _hashArea.length); _names = Arrays.copyOf(_names, _names.length); _hashShared = false; } if (_needRehash) { rehash(); } }
+108,9-108,27	0	_inputBuffer = buf;
+169,13-169,29	0	_gotName = false;
+584,5-624,5	0	{ Object value = get(bean); if (value == null) { if (_nullSerializer != null) { _nullSerializer.serialize(null, jgen, prov); } else { jgen.writeNull(); } } JsonSerializer<Object> ser = _serializer; if (ser == null) { Class<?> cls = value.getClass(); PropertySerializerMap map = _dynamicSerializers; ser = map.serializerFor(cls); if (ser == null) { ser = _findAndAddDynamic(map, cls, prov); } } if (_suppressableValue != null) { if (MARKER_FOR_EMPTY == _suppressableValue) { if (ser.isEmpty(value)) { serializeAsPlaceholder(bean, jgen, prov); return; } } else if (_suppressableValue.equals(value)) { serializeAsPlaceholder(bean, jgen, prov); return; } } if (value == bean) { _handleSelfReference(bean, ser); } if (_typeSerializer == null) { ser.serialize(value, jgen, prov); } else { ser.serializeWithType(value, jgen, prov, _typeSerializer); } }
+76,107-125,5	0	{ String docData; Document doc = null; if (charsetName == null) { docData = Charset.forName(defaultCharset).decode(byteData).toString(); doc = parser.parseInput(docData, baseUri); Element meta = doc.select("meta[http-equiv=content-type], meta[charset]").first(); if (meta != null) { String foundCharset; if (meta.hasAttr("http-equiv")) { foundCharset = getCharsetFromContentType(meta.attr("content")); if (foundCharset == null && meta.hasAttr("charset")) { try { if (Charset.isSupported(meta.attr("charset"))) { foundCharset = meta.attr("charset"); } } catch (IllegalCharsetNameException e) { foundCharset = null; } } } else { foundCharset = meta.attr("charset"); } if (foundCharset != null && foundCharset.length() != 0 && !foundCharset.equals(defaultCharset)) { foundCharset = foundCharset.trim().replaceAll("[\"']", ""); charsetName = foundCharset; byteData.rewind(); docData = Charset.forName(foundCharset).decode(byteData).toString(); doc = null; } } } else { Validate.notEmpty(charsetName, "Must set charset arg to character set of file to parse. Set to null to attempt to detect from HTML"); docData = Charset.forName(charsetName).decode(byteData).toString(); } if (docData.length() > 0 && docData.charAt(0) == 65279) { byteData.rewind(); docData = Charset.forName(defaultCharset).decode(byteData).toString(); docData = docData.substring(1); charsetName = defaultCharset; } if (doc == null) { doc = parser.parseInput(docData, baseUri); doc.outputSettings().charset(charsetName); } return doc; }
+883,21-883,54	0	t.transition(BeforeAttributeName);

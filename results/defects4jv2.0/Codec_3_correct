@@ -1,0 +1,8 @@
+--- /src/java/org/apache/commons/codec/language/DoubleMetaphone.java.buggy	2022-08-31 20:53:11.514575348 -0400
++++ /src/java/org/apache/commons/codec/language/DoubleMetaphone.java.fixed	2022-08-31 20:53:11.514575348 -0400
+@@ -454,3 +454,3 @@
+                 result.append('K');
+-            } else if (contains(value, index + 1, 4, "IER")) {
++            } else if (contains(value,index + 1,3,"IER")) {
+                 result.append('J');
+

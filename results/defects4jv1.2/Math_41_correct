@@ -1,0 +1,8 @@
+--- /src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java.buggy	2022-05-05 23:09:07.077537649 -0400
++++ /src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java.fixed	2022-05-05 23:09:07.077537649 -0400
+@@ -519,3 +519,3 @@
+                 double sumWts = 0;
+-                for (int i = 0; i < weights.length; i++) {
++                for (int i = begin;i < begin + length;i++) {
+                     sumWts += weights[i];
+

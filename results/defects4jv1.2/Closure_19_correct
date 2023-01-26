@@ -1,0 +1,7 @@
+--- src/com/google/javascript/jscomp/type/ChainableReverseAbstractInterpreter.java.buggy	2022-05-05 23:04:42.490299360 -0400
++++ src/com/google/javascript/jscomp/type/ChainableReverseAbstractInterpreter.java.fixed	2022-05-05 23:04:42.490299360 -0400
+@@ -171,2 +171,3 @@
+ 
++case Token.THIS: break;
+         // "this" references aren't currently modeled in the CFG.
+

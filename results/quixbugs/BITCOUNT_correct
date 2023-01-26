@@ -1,0 +1,8 @@
+--- java_programs/BITCOUNT.java.buggy	2022-07-29 12:19:57.765461006 -0400
++++ java_programs/BITCOUNT.java.fixed	2022-07-29 12:19:57.765461006 -0400
+@@ -14,3 +14,3 @@
+         while (n != 0) {
+-            n = (n ^ (n - 1));
++        n = n & (n - 1);
+             count++;
+

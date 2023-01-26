@@ -1,0 +1,9 @@
+--- /src/java/org/apache/commons/jxpath/ri/model/beans/PropertyPointer.java.buggy	2022-07-29 11:13:02.001726828 -0400
++++ /src/java/org/apache/commons/jxpath/ri/model/beans/PropertyPointer.java.fixed	2022-07-29 11:13:02.001726828 -0400
+@@ -151,2 +151,5 @@
+     public int getLength() {
++if (getBaseValue() == null ){
++return 1;
++}
+         return ValueUtils.getLength(getBaseValue());
+

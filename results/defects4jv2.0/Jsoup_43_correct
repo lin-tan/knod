@@ -1,0 +1,8 @@
+--- /src/main/java/org/jsoup/nodes/Element.java.buggy	2022-07-29 11:12:41.817414681 -0400
++++ /src/main/java/org/jsoup/nodes/Element.java.fixed	2022-07-29 11:12:41.817414681 -0400
+@@ -573,3 +573,3 @@
+             E element = elements.get(i);
+-            if (element.equals(search))
++            if (element == search)
+                 return i;
+

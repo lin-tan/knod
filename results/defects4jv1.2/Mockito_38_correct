@@ -1,0 +1,9 @@
+--- /src/org/mockito/internal/verification/argumentmatching/ArgumentMatchingTool.java.buggy	2022-05-05 23:10:24.126480497 -0400
++++ /src/org/mockito/internal/verification/argumentmatching/ArgumentMatchingTool.java.fixed	2022-05-05 23:10:24.126480497 -0400
+@@ -47,2 +47,5 @@
+     private boolean toStringEquals(Matcher m, Object arg) {
++if (arg == null ){
++return false;
++}
+         return StringDescription.toString(m).equals(arg.toString());
+

@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/imagemap/StandardToolTipTagFragmentGenerator.java.buggy	2022-05-05 23:05:48.779110763 -0400
++++ /source/org/jfree/chart/imagemap/StandardToolTipTagFragmentGenerator.java.fixed	2022-05-05 23:05:48.779110763 -0400
+@@ -64,3 +64,3 @@
+     public String generateToolTipFragment(String toolTipText) {
+-        return " title=\"" + toolTipText
++        return " title=\"" + ImageMapUtilities.htmlEscape(toolTipText)
+             + "\" alt=\"\"";
+

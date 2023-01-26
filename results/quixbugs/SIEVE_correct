@@ -1,0 +1,8 @@
+--- java_programs/SIEVE.java.buggy	2022-07-29 12:20:40.186137911 -0400
++++ java_programs/SIEVE.java.fixed	2022-07-29 12:20:40.186137911 -0400
+@@ -40,3 +40,3 @@
+         for (int n=2; n<max+1; n++) {
+-            if (any(list_comp(n, primes))) {
++            if (all(list_comp(n,primes))) {
+                 primes.add(n);
+

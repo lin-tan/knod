@@ -1,0 +1,8 @@
+--- java_programs/GCD.java.buggy	2022-07-29 12:20:09.877654304 -0400
++++ java_programs/GCD.java.fixed	2022-07-29 12:20:09.877654304 -0400
+@@ -18,3 +18,3 @@
+         } else {
+-            return gcd(a % b, b);
++            return gcd(b,a % b);
+         }
+

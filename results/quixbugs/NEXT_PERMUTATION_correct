@@ -1,0 +1,8 @@
+--- java_programs/NEXT_PERMUTATION.java.buggy	2022-07-29 12:20:30.089976828 -0400
++++ java_programs/NEXT_PERMUTATION.java.fixed	2022-07-29 12:20:30.093976893 -0400
+@@ -18,3 +18,3 @@
+                 for (int j=perm.size()-1; j!=i; j--) {
+-                    if (perm.get(j) < perm.get(i)) {
++                    if (perm.get(j) > perm.get(i)) {
+                         ArrayList<Integer> next_perm = perm;
+

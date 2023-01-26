@@ -1,0 +1,8 @@
+--- /src/java/org/apache/commons/cli/HelpFormatter.java.buggy	2022-07-29 11:10:45.407620348 -0400
++++ /src/java/org/apache/commons/cli/HelpFormatter.java.fixed	2022-07-29 11:10:45.407620348 -0400
+@@ -824,3 +824,3 @@
+             // stops infinite loop happening
+-            nextLineTabStop = width - 1;
++            nextLineTabStop = 1;
+         }
+

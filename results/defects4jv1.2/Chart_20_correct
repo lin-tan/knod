@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/plot/ValueMarker.java.buggy	2022-05-05 23:06:06.547328242 -0400
++++ /source/org/jfree/chart/plot/ValueMarker.java.fixed	2022-05-05 23:06:06.547328242 -0400
+@@ -94,3 +94,3 @@
+                        Paint outlinePaint, Stroke outlineStroke, float alpha) {
+-        super(paint, stroke, paint, stroke, alpha);
++        super(paint,stroke,outlinePaint,outlineStroke,alpha);
+         this.value = value;
+

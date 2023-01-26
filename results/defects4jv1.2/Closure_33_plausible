@@ -1,0 +1,9 @@
+--- /src/com/google/javascript/rhino/jstype/PrototypeObjectType.java.buggy	2022-05-05 23:06:43.539781005 -0400
++++ /src/com/google/javascript/rhino/jstype/PrototypeObjectType.java.fixed	2022-05-05 23:06:43.539781005 -0400
+@@ -556,2 +556,5 @@
+     // We only want to match contraints on anonymous types.
++if (getConstructor() != null ){
++return;
++}
+ 
+

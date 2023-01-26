@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/util/ShapeUtilities.java.buggy	2022-05-05 23:05:54.735183664 -0400
++++ /source/org/jfree/chart/util/ShapeUtilities.java.fixed	2022-05-05 23:05:54.735183664 -0400
+@@ -274,3 +274,3 @@
+         PathIterator iterator1 = p1.getPathIterator(null);
+-        PathIterator iterator2 = p1.getPathIterator(null);
++        PathIterator iterator2 = p2.getPathIterator(null);
+         double[] d1 = new double[6];
+

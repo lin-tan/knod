@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java.buggy	2022-05-05 23:05:30.874891615 -0400
++++ /source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java.fixed	2022-05-05 23:05:30.878891664 -0400
+@@ -1796,3 +1796,3 @@
+         CategoryDataset dataset = this.plot.getDataset(index);
+-        if (dataset != null) {
++        if (dataset == null) {
+             return result;
+

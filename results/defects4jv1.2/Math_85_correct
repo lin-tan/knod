@@ -1,0 +1,8 @@
+--- /src/java/org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java.buggy	2022-05-05 23:09:54.954123522 -0400
++++ /src/java/org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java.fixed	2022-05-05 23:09:54.954123522 -0400
+@@ -197,3 +197,3 @@
+    
+-        if (fa * fb >= 0.0 ) {
++        if (fa * fb > 0.0 ) {
+             throw new ConvergenceException(
+

@@ -1,0 +1,8 @@
+--- /src/main/java/org/apache/commons/math/stat/Frequency.java.buggy	2022-05-05 23:09:42.489970998 -0400
++++ /src/main/java/org/apache/commons/math/stat/Frequency.java.fixed	2022-05-05 23:09:42.489970998 -0400
+@@ -302,3 +302,3 @@
+     public double getPct(Object v) {
+-        return getCumPct((Comparable<?>) v);
++        return getPct((Comparable<?>)v);
+     }
+

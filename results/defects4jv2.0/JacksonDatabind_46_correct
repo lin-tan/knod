@@ -1,0 +1,8 @@
+--- /src/main/java/com/fasterxml/jackson/databind/type/ReferenceType.java.buggy	2022-07-29 11:12:12.748965645 -0400
++++ /src/main/java/com/fasterxml/jackson/databind/type/ReferenceType.java.fixed	2022-07-29 11:12:12.748965645 -0400
+@@ -155,3 +155,3 @@
+         sb = _referencedType.getGenericSignature(sb);
+-        sb.append(';');
++        sb.append(">;");
+         return sb;
+

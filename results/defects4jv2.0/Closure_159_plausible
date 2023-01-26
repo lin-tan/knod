@@ -1,0 +1,8 @@
+--- /src/com/google/javascript/jscomp/InlineFunctions.java.buggy	2022-07-29 11:11:05.511929457 -0400
++++ /src/com/google/javascript/jscomp/InlineFunctions.java.fixed	2022-07-29 11:11:05.511929457 -0400
+@@ -776,3 +776,3 @@
+     // For each referenced function, add a new reference
+-    if (node.getType() == Token.CALL) {
++    if (node.hasChildren() ){
+       Node child = node.getFirstChild();
+

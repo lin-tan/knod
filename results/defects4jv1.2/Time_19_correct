@@ -1,0 +1,8 @@
+--- /src/main/java/org/joda/time/DateTimeZone.java.buggy	2022-05-05 23:10:32.190579175 -0400
++++ /src/main/java/org/joda/time/DateTimeZone.java.fixed	2022-05-05 23:10:32.190579175 -0400
+@@ -899,3 +899,3 @@
+             }
+-        } else if (offsetLocal > 0) {
++        } else if (offsetLocal >= 0) {
+             long prev = previousTransition(instantAdjusted);
+
