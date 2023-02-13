@@ -70,7 +70,7 @@ python generate_quixbugs_output.py
 ## Citation
 If you find this code to be useful for your research, please consider citing:
 ```
-@inproceedings{clm,
+@inproceedings{knod,
   title={KNOD: Domain Knowledge Distilled Tree Decoder for Automated Program Repair},
   author={Nan Jiang, Thibaud Lutellier, Yiling Lou, Lin Tan, Dan Goldwasser, and Xiangyu Zhang},
   booktitle={2023 IEEE/ACM 45th International Conference on Software Engineering (ICSE)},
