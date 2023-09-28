@@ -70,10 +70,19 @@ python generate_quixbugs_output.py
 ## Citation
 If you find this code to be useful for your research, please consider citing:
 ```
-@inproceedings{knod,
-  title={KNOD: Domain Knowledge Distilled Tree Decoder for Automated Program Repair},
-  author={Nan Jiang, Thibaud Lutellier, Yiling Lou, Lin Tan, Dan Goldwasser, and Xiangyu Zhang},
-  booktitle={2023 IEEE/ACM 45th International Conference on Software Engineering (ICSE)},
-  year={2023}
+@inproceedings{jiang@domain,
+   author = {Jiang, Nan and Lutellier, Thibaud and Lou, Yiling and Tan, Lin and Goldwasser, Dan and Zhang, Xiangyu},
+   title = {KNOD: Domain Knowledge Distilled Tree Decoder for Automated Program Repair},
+   year = {2023},
+   isbn = {9781665457019},
+   publisher = {IEEE Press},
+   url = {https://doi.org/10.1109/ICSE48619.2023.00111},
+   doi = {10.1109/ICSE48619.2023.00111},
+   booktitle = {Proceedings of the 45th International Conference on Software Engineering},
+   pages = {1251–1263},
+   numpages = {13},
+   keywords = {abstract syntax tree, deep learning, automated program repair},
+   location = {Melbourne, Victoria, Australia},
+   series = {ICSE '23}
 }
 ```
